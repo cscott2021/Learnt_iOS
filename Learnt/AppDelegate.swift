@@ -7,10 +7,12 @@
 //
 
 import UIKit
-
+import Auth0
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
+        return Auth0.resumeAuth(url, options: options)
+    }
     var window: UIWindow?
 
 
