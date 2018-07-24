@@ -2,9 +2,118 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Auth0.plist">
+   </FileRef>
+   <FileRef
       location = "group:Learnt.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Targets Support Files">
+      <Group
+         location = "group:Pods/Target Support Files/Pods-Learnt"
+         name = "Pods-Learnt">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-frameworks.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-resources.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-Learnt/Pods-Learnt.release.xcconfig">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Pods/Target Support Files/Pods-LearntTests"
+         name = "Pods-LearntTests">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-frameworks.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-resources.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests.release.xcconfig">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Pods/Target Support Files/Pods-LearntUITests"
+         name = "Pods-LearntUITests">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-frameworks.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-resources.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.release.xcconfig">
+         </FileRef>
+      </Group>
+   </Group>
 </Workspace>
