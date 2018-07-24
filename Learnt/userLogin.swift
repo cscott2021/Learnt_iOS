@@ -7,12 +7,51 @@
 //
 
 import UIKit
-
+import Auth0
 class userLogin: UIViewController {
-    
+    @IBOutlet var email: UITextView!
+    @IBOutlet var password: UITextView!
+    @IBOutlet var signIn: UIButton!
+    @IBAction func login(){
+        if email.text != "" && password.text != "" {
+        Auth0
+            .authentication()
+            .login(
+                usernameOrEmail: "support@auth0.com",
+                password: "secret-password",
+                realm: "Username-Password-Authentication",
+                scope: "openid")
+            .start { result in
+                switch result {
+                case .success(let credentials):
+                    print("Obtained credentials: \(credentials)")
+                case .failure(let error):
+                    print("Failed with \(error)")
+                }
+        }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
+        
+        Auth0
+            .authentication()
+            .createUser(
+                email: "support@auth0.com",
+                password: "secret-password1",
+                connection: "Username-Password-Authentication",
+                userMetadata: ["first_name": "First",
+                               "last_name": "Last"]
+            )
+            .start { result in
+                switch result {
+                case .success(let user):
+                    print("User Signed up: \(user)")
+                case .failure(let error):
+                    print("Failed with \(error)")
+                }
+        }
         
     }
     
