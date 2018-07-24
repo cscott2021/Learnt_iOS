@@ -17,8 +17,8 @@ class userLogin: UIViewController {
         Auth0
             .authentication()
             .login(
-                usernameOrEmail: "support@auth0.com",
-                password: "secret-password",
+                usernameOrEmail: email.text!,
+                password: password.text!,
                 realm: "Username-Password-Authentication",
                 scope: "openid")
             .start { result in

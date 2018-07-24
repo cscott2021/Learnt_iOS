@@ -19,8 +19,8 @@ class userSignup: UIViewController {
         Auth0
             .authentication()
             .createUser(
-                email: "support@auth0.com",
-                password: "secret-password1",
+                email: email.text!,
+                password: password.text!,
                 connection: "Username-Password-Authentication",
                 userMetadata: ["first_name": "First",
                                "last_name": "Last"]
