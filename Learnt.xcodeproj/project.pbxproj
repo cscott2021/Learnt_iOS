@@ -12,6 +12,7 @@
 		808724CC50042E495F8679D8 /* Pods_LearntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3F8C4C130FB3DEAA15D39 /* Pods_LearntUITests.framework */; };
 		99DB600A2107B43A00C08582 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99DB60092107B43A00C08582 /* Auth0.plist */; };
 		99DB600E2107D24800C08582 /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600D2107D24800C08582 /* userLogin.swift */; };
+		99DB60102107D51700C08582 /* userSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600F2107D51700C08582 /* userSignup.swift */; };
 		99DD924421061F5600D823C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD924321061F5600D823C7 /* AppDelegate.swift */; };
 		99DD924621061F5600D823C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD924521061F5600D823C7 /* ViewController.swift */; };
 		99DD924921061F5600D823C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DD924721061F5600D823C7 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		338C664C297A639FCE30743E /* Pods-LearntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		99DB60092107B43A00C08582 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		99DB600D2107D24800C08582 /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
+		99DB600F2107D51700C08582 /* userSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSignup.swift; sourceTree = "<group>"; };
 		99DD924021061F5600D823C7 /* Learnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DD924321061F5600D823C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99DD924521061F5600D823C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				99DD924321061F5600D823C7 /* AppDelegate.swift */,
 				99DD924521061F5600D823C7 /* ViewController.swift */,
 				99DB600D2107D24800C08582 /* userLogin.swift */,
+				99DB600F2107D51700C08582 /* userSignup.swift */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99DD924A21061F5900D823C7 /* Assets.xcassets */,
 				99DD924C21061F5900D823C7 /* LaunchScreen.storyboard */,
@@ -384,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
 				99DB600E2107D24800C08582 /* userLogin.swift in Sources */,
 				99DD924621061F5600D823C7 /* ViewController.swift in Sources */,
 				99DD924421061F5600D823C7 /* AppDelegate.swift in Sources */,
