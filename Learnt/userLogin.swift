@@ -9,8 +9,8 @@
 import UIKit
 import Auth0
 class userLogin: UIViewController {
-    @IBOutlet var email: UITextView!
-    @IBOutlet var password: UITextView!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
     @IBOutlet var signIn: UIButton!
     @IBAction func login(){
         if email.text != "" && password.text != "" {

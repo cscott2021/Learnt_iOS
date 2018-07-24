@@ -5,11 +5,12 @@
 //  Created by Caleb Scott on 7/24/18.
 //  Copyright © 2018 FloatMe. All rights reserved.
 //
-
+import UIKit
+import Auth0
 class userSignup: UIViewController {
-    @IBOutlet var email: UITextView!
-    @IBOutlet var password: UITextView!
-    @IBOutlet var confirm: UITextView!
+    @IBOutlet var email: UITextField!
+    @IBOutlet var password: UITextField!
+    @IBOutlet var confirm: UITextField!
 
     @IBOutlet var signUpB: UIButton!
     @IBAction func signUp(){
