@@ -4,6 +4,7 @@ import CallKit
 class ViewController: UIViewController, CXProviderDelegate {
     
     override func viewDidLoad() {
+    super.viewDidLoad()
         let provider = CXProvider(configuration: CXProviderConfiguration(localizedName: "My App"))
         provider.setDelegate(self, queue: nil)
         let controller = CXCallController()
@@ -11,7 +12,9 @@ class ViewController: UIViewController, CXProviderDelegate {
         controller.request(transaction, completion: { error in })
         
         DispatchQueue.main.asyncAfter(wallDeadline: DispatchWallTime.now() + 5) {
+            if controller.callObserver.calls[0] != nil {
             provider.reportOutgoingCall(with: controller.callObserver.calls[0].uuid, connectedAt: nil)
+            }
         }
     }
     
