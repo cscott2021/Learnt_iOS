@@ -59,6 +59,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j2-Lb-qdM">
                                 <rect key="frame" x="419" y="434" width="110" height="72"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="login" destination="WfW-NB-Lb3" eventType="touchUpInside" id="NXb-mU-B7P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,6 +81,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jd9-es-vzn"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="hra-A5-UGL" id="G9y-4W-RTi"/>
+                        <outlet property="password" destination="Gvp-35-0Np" id="0tv-xX-4bh"/>
+                        <outlet property="signIn" destination="9j2-Lb-qdM" id="MQw-xS-5eb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDe-LL-Jp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
