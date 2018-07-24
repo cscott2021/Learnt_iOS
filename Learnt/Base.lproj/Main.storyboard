@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="684.9609375" y="-610.15625"/>
         </scene>
-        <!--View Controller-->
+        <!--User Signup-->
         <scene sceneID="Y9J-bO-n18">
             <objects>
-                <viewController id="sW0-0r-hZW" sceneMemberID="viewController">
+                <viewController id="sW0-0r-hZW" customClass="userSignup" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbc-rm-rbl">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,6 +126,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-JS-w2D">
                                 <rect key="frame" x="457" y="541" width="110" height="72"/>
                                 <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="signUp" destination="sW0-0r-hZW" eventType="touchUpInside" id="yeB-1p-yfJ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-cs-paY">
                                 <rect key="frame" x="405" y="468" width="214" height="30"/>
@@ -157,6 +160,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CjZ-tZ-Kkf"/>
                     </view>
+                    <connections>
+                        <outlet property="confirm" destination="DvG-cs-paY" id="mQf-UD-7qy"/>
+                        <outlet property="email" destination="Fxv-HA-afo" id="Yd4-7V-eNe"/>
+                        <outlet property="password" destination="tHu-ik-dKN" id="YQg-V4-gTI"/>
+                        <outlet property="signUpB" destination="Zqv-JS-w2D" id="AM5-2C-LTf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukp-bc-eOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
