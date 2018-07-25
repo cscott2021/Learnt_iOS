@@ -35,23 +35,7 @@ class userLogin: UIViewController {
         super.viewDidLoad()
 
         
-        Auth0
-            .authentication()
-            .createUser(
-                email: "support@auth0.com",
-                password: "secret-password1",
-                connection: "Username-Password-Authentication",
-                userMetadata: ["first_name": "First",
-                               "last_name": "Last"]
-            )
-            .start { result in
-                switch result {
-                case .success(let user):
-                    print("User Signed up: \(user)")
-                case .failure(let error):
-                    print("Failed with \(error)")
-                }
-        }
+       
         
     }
     
