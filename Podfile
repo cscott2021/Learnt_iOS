@@ -8,7 +8,6 @@ target 'Learnt' do
   use_frameworks!
 
   # Pods for Learnt
-pod 'Auth0'
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 

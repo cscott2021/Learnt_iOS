@@ -1,6 +1,4 @@
 PODS:
-  - Auth0 (1.11.0):
-    - SimpleKeychain
   - Firebase/Core (5.0.1):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.0.0)
@@ -30,16 +28,13 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - SimpleKeychain (0.8.1)
 
 DEPENDENCIES:
-  - Auth0
   - Firebase/Core
   - Firebase/Database
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Auth0
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -48,10 +43,8 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - leveldb-library
     - nanopb
-    - SimpleKeychain
 
 SPEC CHECKSUMS:
-  Auth0: 86ca436640b50989b4183f2b12ea4da41a1b121f
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
   FirebaseAnalytics: 19812b49fa5f283dd6b23edf8a14b5d477029ab8
   FirebaseCore: cafc814b2d84fc8733f09e653041cc2165332ad7
@@ -60,8 +53,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  SimpleKeychain: e2485c28d82fcece35e9e41faeac42ebfe614815
 
-PODFILE CHECKSUM: 8734ad1d106be063688ebe7c1af74bc7fd8f7ad5
+PODFILE CHECKSUM: 54d8954d087105e5cc6e812bc14fe280415e87f7
 
 COCOAPODS: 1.5.2

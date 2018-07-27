@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Auth0.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FirebaseCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -35,11 +30,6 @@
 			<false/>
 		</dict>
 		<key>Pods-LearntUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SimpleKeychain.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
