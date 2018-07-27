@@ -7,7 +7,7 @@
 		<key>Auth0.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Pods-Learnt.xcscheme</key>
 		<dict>
