@@ -10,6 +10,7 @@ target 'Learnt' do
   # Pods for Learnt
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'FirebaseUI'
 
   target 'LearntTests' do
     inherit! :search_paths
