@@ -1,9 +1,12 @@
 import UIKit
 import CallKit
-
+import Firebase
 class ViewController: UIViewController, CXProviderDelegate {
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
+        ref = Database.database().reference()
+
         let provider = CXProvider(configuration: CXProviderConfiguration(localizedName: "My App"))
         provider.setDelegate(self, queue: nil)
         let update = CXCallUpdate()
