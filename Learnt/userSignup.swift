@@ -23,7 +23,7 @@ class userSignup: UIViewController, FUIAuthDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
+
         let authUI = FUIAuth.defaultAuthUI()
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI!.delegate = self
