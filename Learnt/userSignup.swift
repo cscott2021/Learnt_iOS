@@ -28,11 +28,12 @@ class userSignup: UIViewController, FUIAuthDelegate {
         // You need to adopt a FUIAuthDelegate protocol to receive callback
         authUI!.delegate = self
         let providers: [FUIAuthProvider] = [
-            FUIGoogleAuth(),
-            FUIFacebookAuth(),
-            FUITwitterAuth(),
-            FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()!),
+            FUIGoogleAuth()
             ]
+//        ,
+//        FUIFacebookAuth(),
+//        FUITwitterAuth(),
+//        FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()!),
         authUI?.providers = providers
 
         let authViewController = authUI!.authViewController()
