@@ -9,6 +9,9 @@ target 'Learnt' do
 
   # Pods for Learnt
 pod 'Auth0'
+pod 'Firebase/Core'
+
+
   target 'LearntTests' do
     inherit! :search_paths
     # Pods for testing
