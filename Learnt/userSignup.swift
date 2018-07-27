@@ -18,39 +18,17 @@ class userSignup: UIViewController, FUIAuthDelegate {
     @IBAction func signUp(){
         if email.text != "" && password.text != "" && confirm.text != "" {
             if password.text == confirm.text {
+                Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (user, error) in
+                    // ...
+                    print("\(String(describing: user))")
+                }
             }
     }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let authUI = FUIAuth.defaultAuthUI()
-        // You need to adopt a FUIAuthDelegate protocol to receive callback
-        authUI!.delegate = self
-        let providers: [FUIAuthProvider] = [
-            FUIGoogleAuth()
-            ]
-//        ,
-//        FUIFacebookAuth(),
-//        FUITwitterAuth(),
-//        FUIPhoneAuth(authUI:FUIAuth.defaultAuthUI()!),
-        authUI?.providers = providers
+    }
 
-        let authViewController = authUI!.authViewController()
-        self.present(authViewController, animated: true)
-
-    }
-    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-        // handle user and error as necessary
-    }
-    func application(_ app: UIApplication, open url: URL,
-                     options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-        let sourceApplication = options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String?
-        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
-            return true
-        }
-        // other URL handling goes here.
-        return false
-    }
     
 }
