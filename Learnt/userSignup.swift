@@ -36,6 +36,7 @@ class userSignup: UIViewController, FUIAuthDelegate {
         authUI?.providers = providers
 
         let authViewController = authUI!.authViewController()
+        authViewController.signIn(withPresenting: self, phoneNumber: nil)
 
     }
     func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
