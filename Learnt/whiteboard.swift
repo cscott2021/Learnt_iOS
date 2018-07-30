@@ -362,10 +362,20 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
     func resetColors(){
          var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton]
+       
+        
+        let rectShape = CAShapeLayer()
+        rectShape.bounds = self.colorView.frame
+        rectShape.position = self.colorView.center
+        rectShape.path = UIBezierPath(roundedRect: self.colorView.bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 20, height: 20)).cgPath
+        
+     //   self.colorView.layer.backgroundColor = UIColor.green.cgColor
+        //Here I'm masking the textView's layer with rectShape layer
+        self.colorView.layer.mask = rectShape
         
         for i in 0...objectArray.count - 1 {
             let object = objectArray[i]
-            object!.layer.cornerRadius = 0
+            object!.layer.cornerRadius = 10
             object!.clipsToBounds = true
         }
     }
