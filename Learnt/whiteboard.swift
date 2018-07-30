@@ -349,6 +349,15 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.blackButton.clipsToBounds = true
         })
     }
+    func resetColors(){
+         var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton]
+        
+        for i in 0...objectArray.count - 1 {
+            let object = objectArray[i]
+            object!.layer.cornerRadius = 0
+            object!.clipsToBounds = true
+        }
+    }
 @IBAction func pickAColor(sender: AnyObject){
     if sender.tag == 0{
         currentColor = 0;
@@ -481,7 +490,6 @@ private func observeReset(){
 
 func startTimer(){
     timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true, block: {[weak self] _ in
-        print("Hello")
     })
 }
 
