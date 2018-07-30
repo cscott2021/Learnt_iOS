@@ -26,7 +26,6 @@ var currentColor:NSNumber = 7;
 
 
 @IBOutlet weak var imageView: UIImageView!
-
 @IBOutlet var colorView: UIView!
 //let screenWidth = UIScreen.main.bounds.size.width //The screen's width
 //let screenHeight = UIScreen.main.bounds.size.height //The screen's height
@@ -121,8 +120,9 @@ override func viewDidLoad() {
     let notificationCenter = NotificationCenter.default
     
     startTimer()
-
-    
+    UIView.animate(withDuration: 0.5, animations: {
+        self.resetColors()
+    })
     }
 
 override func viewWillAppear(_ animated: Bool) {
