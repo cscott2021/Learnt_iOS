@@ -27,6 +27,7 @@ var currentColor:NSNumber = 7;
 
 @IBOutlet weak var imageView: UIImageView!
 
+@IBOutlet var colorView: UIView!
 //let screenWidth = UIScreen.main.bounds.size.width //The screen's width
 //let screenHeight = UIScreen.main.bounds.size.height //The screen's height
 
