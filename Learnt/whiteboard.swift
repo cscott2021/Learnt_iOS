@@ -261,6 +261,94 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
 }
 
+    @IBAction func clickRed() {
+        currentColor = 0;
+        red = 231/255
+        green = 76/255
+        blue = 60/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.redButton.layer.cornerRadius = self.redButton.frame.width / 2
+            self.redButton.clipsToBounds = true
+        })
+    }
+    @IBAction func clickGold() {
+        currentColor = 1;
+        red = 230/255
+        green = 136/255
+        blue = 34/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.goldButton.layer.cornerRadius = self.goldButton.frame.width / 2
+            self.goldButton.clipsToBounds = true
+        })
+    }
+    @IBAction func clickYellow() {
+        currentColor = 2;
+        red = 241/255
+        green = 196/255
+        blue = 15/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.yellowButton.layer.cornerRadius = self.yellowButton.frame.width / 2
+            self.yellowButton.clipsToBounds = true
+        })
+    }
+    @IBAction func pickTeal() {
+        currentColor = 3;
+        red = 52/255
+        green = 152/255
+        blue = 219/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.tealButton.layer.cornerRadius = self.tealButton.frame.width / 2
+            self.tealButton.clipsToBounds = true
+        })
+    }
+    @IBAction func pickGreen() {
+        currentColor = 4;
+        red = 46/255
+        green = 204/255
+        blue = 113/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.greenButton.layer.cornerRadius = self.greenButton.frame.width / 2
+            self.greenButton.clipsToBounds = true
+        })
+    }
+    @IBAction func pickPurple() {
+        currentColor = 5;
+        red = 155/255
+        green = 89/255
+        blue = 182/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.purpleButton.layer.cornerRadius = self.purpleButton.frame.width / 2
+            self.purpleButton.clipsToBounds = true
+        })
+    }
+    @IBAction func pickGrey() {
+        currentColor = 6;
+        red = 149/255
+        green = 165/255
+        blue = 166/255
+        UIView.animate(withDuration: 0.5, animations: {
+            self.resetColors()
+            self.greyButton.layer.cornerRadius = self.greyButton.frame.width / 2
+            self.greyButton.clipsToBounds = true
+        })
+    }
+    @IBAction func pickBlack() {
+        currentColor = 7;
+        red = 44/255
+        green = 62/255
+        blue = 80/255
+        UIView.animate(withDuration: 0.5, animations: {
+        self.resetColors()
+        self.blackButton.layer.cornerRadius = self.blackButton.frame.width / 2
+        self.blackButton.clipsToBounds = true
+        })
+    }
 @IBAction func pickAColor(sender: AnyObject){
     if sender.tag == 0{
         currentColor = 0;
