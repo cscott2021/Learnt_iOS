@@ -120,8 +120,9 @@ override func viewDidLoad() {
     let notificationCenter = NotificationCenter.default
     
     startTimer()
+
     
-}
+    }
 
 override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -234,6 +235,7 @@ func drawLine(fromPoint: CGPoint, toPoint: CGPoint) {
 }
 
 func drawLineObserve(fromPoint: CGPoint, toPoint: CGPoint, color: NSNumber) {
+    
     setRGB(color: color)
     UIGraphicsBeginImageContext(self.view.frame.size)
     imageView?.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
@@ -260,6 +262,14 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         lastPoint = currentPoint
     }
 }
+    @IBOutlet var redButton: UIButton!
+    @IBOutlet var goldButton: UIButton!
+    @IBOutlet var yellowButton: UIButton!
+    @IBOutlet var tealButton: UIButton!
+    @IBOutlet var greenButton: UIButton!
+    @IBOutlet var purpleButton: UIButton!
+    @IBOutlet var greyButton: UIButton!
+    @IBOutlet var blackButton: UIButton!
 
     @IBAction func clickRed() {
         currentColor = 0;
