@@ -202,7 +202,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.15305897887323944" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="M60-SU-aIb" firstAttribute="baseline" secondItem="tPm-Qs-NEL" secondAttribute="baseline" id="0NB-82-aVc"/>
                                     <constraint firstItem="njD-kk-jet" firstAttribute="bottom" secondItem="xpx-LN-gpi" secondAttribute="bottom" id="24S-mM-GmS"/>
@@ -303,6 +303,7 @@
                     </view>
                     <connections>
                         <outlet property="blackButton" destination="tPm-Qs-NEL" id="afs-yQ-bWM"/>
+                        <outlet property="colorView" destination="THT-UP-jVz" id="mwe-8B-dYc"/>
                         <outlet property="goldButton" destination="ibn-Cp-xRl" id="vAa-jo-xy6"/>
                         <outlet property="greenButton" destination="qn5-Tw-OV7" id="AbE-uW-FyQ"/>
                         <outlet property="greyButton" destination="8IN-1h-9Rc" id="mx8-9K-5QM"/>
