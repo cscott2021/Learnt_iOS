@@ -8,10 +8,6 @@
 
 import Firebase
 import FirebaseDatabase
-
-class whiteboard: UIViewController {
-
-
 import AgoraAudioKit
 class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     var agoraKit: AgoraRtcEngineKit!
@@ -25,6 +21,9 @@ class whiteboard: UIViewController, AgoraRtcEngineDelegate {
         agoraKit.joinChannel(byToken: nil, channelId: "demoChannel1", info:nil, uid:UInt(arc4random())){[weak self] (sid, uid, elapsed) -> Void in
             // Join channel "demoChannel1"
         }
+    }
+    func leaveChannel() {
+        agoraKit.leaveChannel(nil)
     }
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
@@ -132,7 +131,6 @@ override func viewDidLoad() {
     observeNewPoints()
     observeReset()
     let notificationCenter = NotificationCenter.default
-    
     startTimer()
     UIView.animate(withDuration: 0.5, animations: {
         self.resetColors()
