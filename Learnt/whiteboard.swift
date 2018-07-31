@@ -21,6 +21,11 @@ class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     func setChannelProfile() {
         agoraKit.setChannelProfile(.communication)
     }
+    func joinChannel() {
+        agoraKit.joinChannel(byToken: nil, channelId: "demoChannel1", info:nil, uid:UInt(arc4random())){[weak self] (sid, uid, elapsed) -> Void in
+            // Join channel "demoChannel1"
+        }
+    }
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
 
