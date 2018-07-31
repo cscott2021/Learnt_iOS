@@ -8,10 +8,23 @@
 
 import Firebase
 import FirebaseDatabase
-
-class whiteboard: UIViewController {
-
-
+import AgoraAudioKit
+class whiteboard: UIViewController, AgoraRtcEngineDelegate {
+    var agoraKit: AgoraRtcEngineKit!
+    func initializeAgoraEngine() {
+        agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "86af5a6e67ba4c6e8532688a658ea99d", delegate: self)
+    }
+    func setChannelProfile() {
+        agoraKit.setChannelProfile(.communication)
+    }
+    func joinChannel() {
+        agoraKit.joinChannel(byToken: nil, channelId: "demoChannel1", info:nil, uid:UInt(arc4random())){[weak self] (sid, uid, elapsed) -> Void in
+            // Join channel "demoChannel1"
+        }
+    }
+    func leaveChannel() {
+        agoraKit.leaveChannel(nil)
+    }
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
 
@@ -118,7 +131,9 @@ override func viewDidLoad() {
     observeNewPoints()
     observeReset()
     let notificationCenter = NotificationCenter.default
-    
+    initializeAgoraEngine()
+    setChannelProfile()
+    joinChannel()
     startTimer()
     UIView.animate(withDuration: 0.5, animations: {
         self.resetColors()
@@ -271,7 +286,7 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     @IBOutlet var purpleButton: UIButton!
     @IBOutlet var greyButton: UIButton!
     @IBOutlet var blackButton: UIButton!
-
+    @IBOutlet var clear: UIButton!
     @IBAction func clickRed() {
         currentColor = 0;
         red = 231/255
@@ -361,7 +376,7 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         })
     }
     func resetColors(){
-         var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton]
+         var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton, clear]
        
         
         let rectShape = CAShapeLayer()
@@ -474,8 +489,11 @@ func setRGB(color: NSNumber){
 }
 
 @IBAction func reset(){
+    UIView.animate(withDuration: 1.5, animations: {
+
     self.imageView.image = nil
-    drawRef.removeValue()
+    self.drawRef.removeValue()
+    })
 }
 
 
