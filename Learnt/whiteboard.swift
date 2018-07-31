@@ -18,6 +18,9 @@ class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     func initializeAgoraEngine() {
         agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: "86af5a6e67ba4c6e8532688a658ea99d", delegate: self)
     }
+    func setChannelProfile() {
+        agoraKit.setChannelProfile(.communication)
+    }
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
 
