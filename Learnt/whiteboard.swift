@@ -12,6 +12,7 @@ import FirebaseDatabase
 class whiteboard: UIViewController {
 
 
+import AgoraAudioKit
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
 
