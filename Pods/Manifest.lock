@@ -1,4 +1,5 @@
 PODS:
+  - AgoraRtcEngine_iOS (2.2.0)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -146,12 +147,14 @@ PODS:
     - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
+  - AgoraRtcEngine_iOS
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AgoraRtcEngine_iOS
     - Bolts
     - BoringSSL
     - FBSDKCoreKit
@@ -181,6 +184,7 @@ SPEC REPOS:
     - TwitterKit
 
 SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: 616331997992150073b68aa5737929fdee1491c8
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   BoringSSL: c46efb47593135382bc0934196f16d2f726f5f36
   FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
@@ -209,6 +213,6 @@ SPEC CHECKSUMS:
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: 09a3cce794e9e2e0bc5f9f22e745655ba79bc577
+PODFILE CHECKSUM: cf7169f2eb7659c55a2a1f0fa2364999b6934743
 
 COCOAPODS: 1.5.2
