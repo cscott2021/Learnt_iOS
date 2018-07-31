@@ -13,6 +13,7 @@ class whiteboard: UIViewController {
 
 
 import AgoraAudioKit
+class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
     private var drawRefHandle: DatabaseHandle?
 
