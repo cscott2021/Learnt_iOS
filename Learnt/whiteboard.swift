@@ -131,6 +131,9 @@ override func viewDidLoad() {
     observeNewPoints()
     observeReset()
     let notificationCenter = NotificationCenter.default
+    initializeAgoraEngine()
+    setChannelProfile()
+    joinChannel()
     startTimer()
     UIView.animate(withDuration: 0.5, animations: {
         self.resetColors()
