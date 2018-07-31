@@ -286,7 +286,7 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     @IBOutlet var purpleButton: UIButton!
     @IBOutlet var greyButton: UIButton!
     @IBOutlet var blackButton: UIButton!
-
+    @IBOutlet var clear: UIButton!
     @IBAction func clickRed() {
         currentColor = 0;
         red = 231/255
@@ -376,7 +376,7 @@ override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         })
     }
     func resetColors(){
-         var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton]
+         var objectArray = [redButton, goldButton, yellowButton, tealButton, greenButton, purpleButton, greyButton, blackButton, clear]
        
         
         let rectShape = CAShapeLayer()
@@ -489,8 +489,11 @@ func setRGB(color: NSNumber){
 }
 
 @IBAction func reset(){
+    UIView.animate(withDuration: 1.5, animations: {
+
     self.imageView.image = nil
-    drawRef.removeValue()
+    self.drawRef.removeValue()
+    })
 }
 
 
