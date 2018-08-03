@@ -7,11 +7,17 @@
 //
 
 import UIKit
-
-class tutorOpen {
 import Firebase
 public class tutorOpen: UIViewController {
      var tutor_ref: DatabaseReference = Database.database().reference(withPath: "open_tutors")
+    func newSession(user: String){
+        let ref = tutor_ref.child(user)
+        
+        let message = ["user_id": user, "name": "This is the name", "subject": "subject"]
+        ref.setValue(message)
+        
+     //   finishSendingMessage()
+    }
     func startQuery() {
         let query = Database.database().reference().child("open_tutors").queryLimited(toLast: 10)
         
