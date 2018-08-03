@@ -11,7 +11,6 @@ target 'Learnt' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'FirebaseUI'
-  pod 'AgoraRtcEngine_iOS'
 
   target 'LearntTests' do
     inherit! :search_paths
