@@ -141,6 +141,8 @@ override func viewDidLoad() {
     UIView.animate(withDuration: 0.5, animations: {
         self.resetColors()
     })
+    tutorOpen().newSession(user: "4939awieasdfdofh38")
+    tutorOpen().startQuery()
     }
 
 override func viewWillAppear(_ animated: Bool) {
