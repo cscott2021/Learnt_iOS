@@ -19,7 +19,7 @@ class whiteboard: UIViewController, AgoraRtcEngineDelegate {
         agoraKit.setChannelProfile(.communication)
     }
     func joinChannel() {
-        agoraKit.joinChannel(byToken: nil, channelId: "demoChannel1", info:nil, uid:UInt(arc4random())){[weak self] (sid, uid, elapsed) -> Void in
+        agoraKit.joinChannel(byToken: nil, channelId: channel_id, info:nil, uid:UInt(arc4random())){[weak self] (sid, uid, elapsed) -> Void in
             // Join channel "demoChannel1"
         }
     }
@@ -127,6 +127,8 @@ let blackColor: UIButton = {
 
 override func viewDidLoad() {
     super.viewDidLoad()
+    channel_id = "4939awieasdfdofh38"
+
     view.addSubview(colorsBarView)
     setupColorBarView()
     observeNewPoints()
