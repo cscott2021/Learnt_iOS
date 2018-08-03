@@ -1,11 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## AgoraRtcEngine_iOS
-
-Copyright 2018 agora.io. All rights reserved.
-
-
 ## Bolts
 
 BSD License

@@ -206,7 +206,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <action selector="pickBlack" destination="JxN-yh-O0d" eventType="touchUpInside" id="z5j-oE-tX7"/>
+                                            <action selector="reset" destination="JxN-yh-O0d" eventType="touchUpInside" id="HpA-Uq-Jl1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -311,6 +311,7 @@
                     </view>
                     <connections>
                         <outlet property="blackButton" destination="tPm-Qs-NEL" id="afs-yQ-bWM"/>
+                        <outlet property="clear" destination="8YZ-mr-sqG" id="qIo-7Z-vp1"/>
                         <outlet property="colorView" destination="THT-UP-jVz" id="mwe-8B-dYc"/>
                         <outlet property="goldButton" destination="ibn-Cp-xRl" id="vAa-jo-xy6"/>
                         <outlet property="greenButton" destination="qn5-Tw-OV7" id="AbE-uW-FyQ"/>

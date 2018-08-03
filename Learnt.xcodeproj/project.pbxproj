@@ -10,9 +10,20 @@
 		061E59ECC53CC4F34B921134 /* Pods_LearntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F7CCA0D10A01962A2CDB6 /* Pods_LearntTests.framework */; };
 		3E8230E75EDC0002E75585E1 /* Pods_Learnt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */; };
 		808724CC50042E495F8679D8 /* Pods_LearntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3F8C4C130FB3DEAA15D39 /* Pods_LearntUITests.framework */; };
+		9914322021148A85006977FF /* tutorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9914321F21148A85006977FF /* tutorOpen.swift */; };
 		99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B88899210BBDD0007E6957 /* GoogleService-Info.plist */; };
 		99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C32EEC210E8F0A009FA420 /* whiteboard.swift */; };
 		99C32EEF210E8F48009FA420 /* DrawClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C32EEE210E8F48009FA420 /* DrawClass.swift */; };
+		99DB422C2111053100E8D68E /* clear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99DB422B2111053100E8D68E /* clear.jpeg */; };
+		99DB423221110C3500E8D68E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423121110C3400E8D68E /* Accelerate.framework */; };
+		99DB423421110C4700E8D68E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423321110C4700E8D68E /* SystemConfiguration.framework */; };
+		99DB423621110C5300E8D68E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423521110C5300E8D68E /* libc++.tbd */; };
+		99DB423821110C5D00E8D68E /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423721110C5D00E8D68E /* libresolv.tbd */; };
+		99DB423A21110C6700E8D68E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423921110C6600E8D68E /* CoreMedia.framework */; };
+		99DB423C21110C7C00E8D68E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423B21110C7C00E8D68E /* AudioToolbox.framework */; };
+		99DB423E21110C8900E8D68E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423D21110C8900E8D68E /* CoreTelephony.framework */; };
+		99DB424021110C9300E8D68E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423F21110C9300E8D68E /* AVFoundation.framework */; };
+		99DB424221110CAB00E8D68E /* AgoraAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */; };
 		99DB600A2107B43A00C08582 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99DB60092107B43A00C08582 /* Auth0.plist */; };
 		99DB600E2107D24800C08582 /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600D2107D24800C08582 /* userLogin.swift */; };
 		99DB60102107D51700C08582 /* userSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600F2107D51700C08582 /* userSignup.swift */; };
@@ -46,9 +57,21 @@
 /* Begin PBXFileReference section */
 		188F7CCA0D10A01962A2CDB6 /* Pods_LearntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		338C664C297A639FCE30743E /* Pods-LearntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9914321F21148A85006977FF /* tutorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorOpen.swift; sourceTree = "<group>"; };
 		99B88899210BBDD0007E6957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99C32EEC210E8F0A009FA420 /* whiteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiteboard.swift; sourceTree = "<group>"; };
 		99C32EEE210E8F48009FA420 /* DrawClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawClass.swift; sourceTree = "<group>"; };
+		99DB422B2111053100E8D68E /* clear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clear.jpeg; path = ../../../../Desktop/clear.jpeg; sourceTree = "<group>"; };
+		99DB422F21110C1000E8D68E /* AgoraAudioKit.framework.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = AgoraAudioKit.framework.zip; sourceTree = "<group>"; };
+		99DB423121110C3400E8D68E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		99DB423321110C4700E8D68E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		99DB423521110C5300E8D68E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		99DB423721110C5D00E8D68E /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		99DB423921110C6600E8D68E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		99DB423B21110C7C00E8D68E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		99DB423D21110C8900E8D68E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		99DB423F21110C9300E8D68E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AgoraAudioKit.framework; sourceTree = SOURCE_ROOT; };
 		99DB60092107B43A00C08582 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		99DB600D2107D24800C08582 /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
 		99DB600F2107D51700C08582 /* userSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSignup.swift; sourceTree = "<group>"; };
@@ -80,7 +103,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DB424021110C9300E8D68E /* AVFoundation.framework in Frameworks */,
+				99DB423E21110C8900E8D68E /* CoreTelephony.framework in Frameworks */,
+				99DB423C21110C7C00E8D68E /* AudioToolbox.framework in Frameworks */,
+				99DB423A21110C6700E8D68E /* CoreMedia.framework in Frameworks */,
+				99DB423821110C5D00E8D68E /* libresolv.tbd in Frameworks */,
+				99DB423621110C5300E8D68E /* libc++.tbd in Frameworks */,
+				99DB423421110C4700E8D68E /* SystemConfiguration.framework in Frameworks */,
+				99DB423221110C3500E8D68E /* Accelerate.framework in Frameworks */,
 				3E8230E75EDC0002E75585E1 /* Pods_Learnt.framework in Frameworks */,
+				99DB424221110CAB00E8D68E /* AgoraAudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +165,10 @@
 				99DD924521061F5600D823C7 /* receiveacall.swift */,
 				C5E20B7A210A28190089A173 /* File.swift */,
 				99DB600D2107D24800C08582 /* userLogin.swift */,
+				99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */,
 				99C32EEC210E8F0A009FA420 /* whiteboard.swift */,
+				9914321F21148A85006977FF /* tutorOpen.swift */,
+				99DB422B2111053100E8D68E /* clear.jpeg */,
 				99DB600F2107D51700C08582 /* userSignup.swift */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99C32EEE210E8F48009FA420 /* DrawClass.swift */,
@@ -179,6 +214,15 @@
 		D39B0E478C4234962F53B221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99DB423F21110C9300E8D68E /* AVFoundation.framework */,
+				99DB423D21110C8900E8D68E /* CoreTelephony.framework */,
+				99DB423B21110C7C00E8D68E /* AudioToolbox.framework */,
+				99DB423921110C6600E8D68E /* CoreMedia.framework */,
+				99DB423721110C5D00E8D68E /* libresolv.tbd */,
+				99DB423521110C5300E8D68E /* libc++.tbd */,
+				99DB423321110C4700E8D68E /* SystemConfiguration.framework */,
+				99DB423121110C3400E8D68E /* Accelerate.framework */,
+				99DB422F21110C1000E8D68E /* AgoraAudioKit.framework.zip */,
 				9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */,
 				188F7CCA0D10A01962A2CDB6 /* Pods_LearntTests.framework */,
 				D8E3F8C4C130FB3DEAA15D39 /* Pods_LearntUITests.framework */,
@@ -296,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */,
+				99DB422C2111053100E8D68E /* clear.jpeg in Resources */,
 				99DD924E21061F5900D823C7 /* LaunchScreen.storyboard in Resources */,
 				99DD924B21061F5900D823C7 /* Assets.xcassets in Resources */,
 				99DD924921061F5600D823C7 /* Main.storyboard in Resources */,
@@ -465,6 +510,7 @@
 			files = (
 				C5E20B7B210A28190089A173 /* File.swift in Sources */,
 				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
+				9914322021148A85006977FF /* tutorOpen.swift in Sources */,
 				99DB600E2107D24800C08582 /* userLogin.swift in Sources */,
 				99DD924621061F5600D823C7 /* receiveacall.swift in Sources */,
 				99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */,
@@ -645,6 +691,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDM434QUJ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learnt",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Learnt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -664,6 +715,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MDM434QUJ5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Learnt",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Learnt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
