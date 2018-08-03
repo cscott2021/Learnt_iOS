@@ -124,7 +124,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THT-UP-jVz">
-                                <rect key="frame" x="136" y="667" width="752" height="101"/>
+                                <rect key="frame" x="90" y="667" width="845" height="101"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibn-Cp-xRl">
                                         <rect key="frame" x="8" y="8" width="85" height="85"/>
@@ -203,6 +203,14 @@
                                             <action selector="pickBlack" destination="JxN-yh-O0d" eventType="touchUpInside" id="8NP-Td-4od"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YZ-mr-sqG">
+                                        <rect key="frame" x="752" y="8" width="85" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <action selector="pickBlack" destination="JxN-yh-O0d" eventType="touchUpInside" id="z5j-oE-tX7"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="0.15305897887323944" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -237,7 +245,7 @@
                                     <constraint firstItem="xpx-LN-gpi" firstAttribute="leading" secondItem="njD-kk-jet" secondAttribute="trailing" constant="8" symbolic="YES" id="MFf-0C-lsg"/>
                                     <constraint firstItem="njD-kk-jet" firstAttribute="firstBaseline" secondItem="qn5-Tw-OV7" secondAttribute="firstBaseline" id="Man-h1-UXW"/>
                                     <constraint firstItem="xpx-LN-gpi" firstAttribute="firstBaseline" secondItem="M60-SU-aIb" secondAttribute="firstBaseline" id="N59-Hm-Vf1"/>
-                                    <constraint firstItem="tPm-Qs-NEL" firstAttribute="trailing" secondItem="THT-UP-jVz" secondAttribute="trailingMargin" id="NAA-Zt-5BP"/>
+                                    <constraint firstItem="tPm-Qs-NEL" firstAttribute="trailing" secondItem="THT-UP-jVz" secondAttribute="trailingMargin" constant="-93" id="NAA-Zt-5BP"/>
                                     <constraint firstItem="qn5-Tw-OV7" firstAttribute="firstBaseline" secondItem="M60-SU-aIb" secondAttribute="firstBaseline" id="PH3-Vk-OmA"/>
                                     <constraint firstItem="WI6-kd-4hX" firstAttribute="firstBaseline" secondItem="xpx-LN-gpi" secondAttribute="firstBaseline" id="QHf-P4-8bh"/>
                                     <constraint firstItem="xpx-LN-gpi" firstAttribute="bottom" secondItem="qn5-Tw-OV7" secondAttribute="bottom" id="QRF-3X-0ax"/>
@@ -299,8 +307,8 @@
                             <constraint firstItem="vGI-Eu-CSE" firstAttribute="trailing" secondItem="4zZ-5g-ks2" secondAttribute="trailing" id="78m-IE-mgi"/>
                             <constraint firstItem="vGI-Eu-CSE" firstAttribute="top" secondItem="XDn-X4-6sQ" secondAttribute="top" id="O65-do-NuQ"/>
                             <constraint firstItem="vGI-Eu-CSE" firstAttribute="bottom" secondItem="4zZ-5g-ks2" secondAttribute="bottom" id="T5H-el-cA2"/>
-                            <constraint firstItem="4zZ-5g-ks2" firstAttribute="trailing" secondItem="THT-UP-jVz" secondAttribute="trailing" constant="136" id="clu-iR-2r4"/>
-                            <constraint firstItem="THT-UP-jVz" firstAttribute="leading" secondItem="4zZ-5g-ks2" secondAttribute="leading" constant="136" id="i8O-Ag-VJY"/>
+                            <constraint firstItem="4zZ-5g-ks2" firstAttribute="trailing" secondItem="THT-UP-jVz" secondAttribute="trailing" constant="89" id="clu-iR-2r4"/>
+                            <constraint firstItem="THT-UP-jVz" firstAttribute="leading" secondItem="4zZ-5g-ks2" secondAttribute="leading" constant="90" id="i8O-Ag-VJY"/>
                             <constraint firstItem="vGI-Eu-CSE" firstAttribute="leading" secondItem="4zZ-5g-ks2" secondAttribute="leading" id="qUC-Vo-E3Z"/>
                             <constraint firstItem="4zZ-5g-ks2" firstAttribute="bottom" secondItem="THT-UP-jVz" secondAttribute="bottom" id="rGb-oM-B1h"/>
                         </constraints>
