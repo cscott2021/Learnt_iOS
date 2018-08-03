@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JxN-yh-O0d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JxN-yh-O0d">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -123,6 +120,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGI-Eu-CSE">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="THT-UP-jVz">
                                 <rect key="frame" x="90" y="667" width="845" height="101"/>
                                 <subviews>
@@ -207,6 +207,7 @@
                                         <rect key="frame" x="752" y="8" width="85" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" backgroundImage="clear.jpeg"/>
                                         <connections>
                                             <action selector="reset" destination="JxN-yh-O0d" eventType="touchUpInside" id="HpA-Uq-Jl1"/>
                                         </connections>
@@ -297,9 +298,6 @@
                                     <constraint firstItem="M60-SU-aIb" firstAttribute="leading" secondItem="qn5-Tw-OV7" secondAttribute="trailing" constant="8" symbolic="YES" id="zxQ-y7-TmS"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vGI-Eu-CSE">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -416,7 +414,6 @@
         <!--View Controller-->
         <scene sceneID="tZR-yh-eJr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YWq-VG-0u2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gTk-bk-aFp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DLf-i4-aaX">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
@@ -486,6 +483,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZXN-pi-6jF"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWq-VG-0u2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2333.7890625" y="-266.40625"/>
         </scene>
@@ -766,7 +764,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogX-4b-dyW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ies-3q-kxa">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -779,6 +777,9 @@
             <point key="canvasLocation" x="1609.5703125" y="-266.40625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clear.jpeg" width="355" height="355"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="x1t-R1-m08"/>
     </inferredMetricsTieBreakers>
