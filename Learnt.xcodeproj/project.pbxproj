@@ -34,6 +34,7 @@
 		99DD924E21061F5900D823C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DD924C21061F5900D823C7 /* LaunchScreen.storyboard */; };
 		99DD925921061F5900D823C7 /* LearntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD925821061F5900D823C7 /* LearntTests.swift */; };
 		99DD926421061F5900D823C7 /* LearntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD926321061F5900D823C7 /* LearntUITests.swift */; };
+		99F907E5212358DF00E56F19 /* subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907E4212358DF00E56F19 /* subjects.swift */; };
 		C5E20B7B210A28190089A173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E20B7A210A28190089A173 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		99DD925F21061F5900D823C7 /* LearntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DD926321061F5900D823C7 /* LearntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearntUITests.swift; sourceTree = "<group>"; };
 		99DD926521061F5900D823C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99F907E4212358DF00E56F19 /* subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjects.swift; sourceTree = "<group>"; };
 		9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learnt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1ECDBABAF671C3B180453C /* Pods-LearntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF5B9E702E3FA75207F878D0 /* Pods-Learnt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learnt/Pods-Learnt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				9914321F21148A85006977FF /* tutorOpen.swift */,
 				99DB422B2111053100E8D68E /* clear.jpeg */,
 				99DB600F2107D51700C08582 /* userSignup.swift */,
+				99F907E4212358DF00E56F19 /* subjects.swift */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99C32EEE210E8F48009FA420 /* DrawClass.swift */,
 				99DD924A21061F5900D823C7 /* Assets.xcassets */,
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5E20B7B210A28190089A173 /* File.swift in Sources */,
+				99F907E5212358DF00E56F19 /* subjects.swift in Sources */,
 				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
 				9914322021148A85006977FF /* tutorOpen.swift in Sources */,
 				99DB600E2107D24800C08582 /* userLogin.swift in Sources */,
