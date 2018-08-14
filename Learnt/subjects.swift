@@ -27,7 +27,7 @@ class subjectsView: UIViewController, UICollectionViewDataSource, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.myLabel.text = self.items[indexPath.item]
+        cell.myButton.setTitle(self.items[indexPath.item], for: .normal)
         cell.backgroundColor = UIColor.cyan // make cell more visible in our example project
         
         return cell

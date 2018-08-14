@@ -14,7 +14,6 @@
 		99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B88899210BBDD0007E6957 /* GoogleService-Info.plist */; };
 		99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C32EEC210E8F0A009FA420 /* whiteboard.swift */; };
 		99C32EEF210E8F48009FA420 /* DrawClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C32EEE210E8F48009FA420 /* DrawClass.swift */; };
-		99DB422C2111053100E8D68E /* clear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99DB422B2111053100E8D68E /* clear.jpeg */; };
 		99DB423221110C3500E8D68E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423121110C3400E8D68E /* Accelerate.framework */; };
 		99DB423421110C4700E8D68E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423321110C4700E8D68E /* SystemConfiguration.framework */; };
 		99DB423621110C5300E8D68E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DB423521110C5300E8D68E /* libc++.tbd */; };
@@ -35,6 +34,7 @@
 		99DD925921061F5900D823C7 /* LearntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD925821061F5900D823C7 /* LearntTests.swift */; };
 		99DD926421061F5900D823C7 /* LearntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD926321061F5900D823C7 /* LearntUITests.swift */; };
 		99F907E5212358DF00E56F19 /* subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907E4212358DF00E56F19 /* subjects.swift */; };
+		99F907E72123640C00E56F19 /* clear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99F907E62123640C00E56F19 /* clear.jpeg */; };
 		C5E20B7B210A28190089A173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E20B7A210A28190089A173 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -62,7 +62,6 @@
 		99B88899210BBDD0007E6957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99C32EEC210E8F0A009FA420 /* whiteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiteboard.swift; sourceTree = "<group>"; };
 		99C32EEE210E8F48009FA420 /* DrawClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawClass.swift; sourceTree = "<group>"; };
-		99DB422B2111053100E8D68E /* clear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = clear.jpeg; path = ../../../../Desktop/clear.jpeg; sourceTree = "<group>"; };
 		99DB422F21110C1000E8D68E /* AgoraAudioKit.framework.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = AgoraAudioKit.framework.zip; sourceTree = "<group>"; };
 		99DB423121110C3400E8D68E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		99DB423321110C4700E8D68E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -90,6 +89,7 @@
 		99DD926321061F5900D823C7 /* LearntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearntUITests.swift; sourceTree = "<group>"; };
 		99DD926521061F5900D823C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F907E4212358DF00E56F19 /* subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjects.swift; sourceTree = "<group>"; };
+		99F907E62123640C00E56F19 /* clear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clear.jpeg; sourceTree = "<group>"; };
 		9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learnt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1ECDBABAF671C3B180453C /* Pods-LearntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF5B9E702E3FA75207F878D0 /* Pods-Learnt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learnt/Pods-Learnt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */,
 				99C32EEC210E8F0A009FA420 /* whiteboard.swift */,
 				9914321F21148A85006977FF /* tutorOpen.swift */,
-				99DB422B2111053100E8D68E /* clear.jpeg */,
+				99F907E62123640C00E56F19 /* clear.jpeg */,
 				99DB600F2107D51700C08582 /* userSignup.swift */,
 				99F907E4212358DF00E56F19 /* subjects.swift */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
@@ -342,8 +342,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F907E72123640C00E56F19 /* clear.jpeg in Resources */,
 				99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */,
-				99DB422C2111053100E8D68E /* clear.jpeg in Resources */,
 				99DD924E21061F5900D823C7 /* LaunchScreen.storyboard in Resources */,
 				99DD924B21061F5900D823C7 /* Assets.xcassets in Resources */,
 				99DD924921061F5600D823C7 /* Main.storyboard in Resources */,
