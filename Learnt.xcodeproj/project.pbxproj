@@ -36,6 +36,7 @@
 		99F907E72123640C00E56F19 /* clear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99F907E62123640C00E56F19 /* clear.jpeg */; };
 		99F907E92124709100E56F19 /* tutorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907E82124709100E56F19 /* tutorScreen.swift */; };
 		99F907EB2124716800E56F19 /* coreSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907EA2124716800E56F19 /* coreSubject.swift */; };
+		BECD30BA2124AB94002DDABF /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BECD30B92124AB94002DDABF /* Unknown.jpeg */; };
 		C5E20B7B210A28190089A173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E20B7A210A28190089A173 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learnt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1ECDBABAF671C3B180453C /* Pods-LearntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF5B9E702E3FA75207F878D0 /* Pods-Learnt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learnt/Pods-Learnt.debug.xcconfig"; sourceTree = "<group>"; };
+		BECD30B92124AB94002DDABF /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = "<group>"; };
 		C5E20B7A210A28190089A173 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CD42C119B1705E03BD53BAD6 /* Pods-Learnt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Learnt/Pods-Learnt.release.xcconfig"; sourceTree = "<group>"; };
 		D162BE8DBA1F9A30E0886D9C /* Pods-LearntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearntTests/Pods-LearntTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				99DB600D2107D24800C08582 /* userLogin.swift */,
 				99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */,
 				99C32EEC210E8F0A009FA420 /* whiteboard.swift */,
+				BECD30B92124AB94002DDABF /* Unknown.jpeg */,
 				9914321F21148A85006977FF /* tutorOpen.swift */,
 				99F907E82124709100E56F19 /* tutorScreen.swift */,
 				99F907E62123640C00E56F19 /* clear.jpeg */,
@@ -350,6 +353,7 @@
 				99DD924E21061F5900D823C7 /* LaunchScreen.storyboard in Resources */,
 				99DD924B21061F5900D823C7 /* Assets.xcassets in Resources */,
 				99DD924921061F5600D823C7 /* Main.storyboard in Resources */,
+				BECD30BA2124AB94002DDABF /* Unknown.jpeg in Resources */,
 				99DB600A2107B43A00C08582 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
