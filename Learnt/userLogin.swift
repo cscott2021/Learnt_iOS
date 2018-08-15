@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseUI
+var user_id: String!
 class userLogin: UIViewController {
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
@@ -16,7 +17,8 @@ class userLogin: UIViewController {
     @IBAction func login(){
         if email.text != "" && password.text != "" {
             Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
-                print(String(describing: user))
+                print(String(describing: Auth.auth().currentUser!.uid))
+                user_id = Auth.auth().currentUser!.uid
             }
         }
     }

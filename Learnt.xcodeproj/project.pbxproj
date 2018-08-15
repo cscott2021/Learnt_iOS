@@ -27,7 +27,6 @@
 		99DB600E2107D24800C08582 /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600D2107D24800C08582 /* userLogin.swift */; };
 		99DB60102107D51700C08582 /* userSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB600F2107D51700C08582 /* userSignup.swift */; };
 		99DD924421061F5600D823C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD924321061F5600D823C7 /* AppDelegate.swift */; };
-		99DD924621061F5600D823C7 /* receiveacall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD924521061F5600D823C7 /* receiveacall.swift */; };
 		99DD924921061F5600D823C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DD924721061F5600D823C7 /* Main.storyboard */; };
 		99DD924B21061F5900D823C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DD924A21061F5900D823C7 /* Assets.xcassets */; };
 		99DD924E21061F5900D823C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DD924C21061F5900D823C7 /* LaunchScreen.storyboard */; };
@@ -35,6 +34,8 @@
 		99DD926421061F5900D823C7 /* LearntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DD926321061F5900D823C7 /* LearntUITests.swift */; };
 		99F907E5212358DF00E56F19 /* subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907E4212358DF00E56F19 /* subjects.swift */; };
 		99F907E72123640C00E56F19 /* clear.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 99F907E62123640C00E56F19 /* clear.jpeg */; };
+		99F907E92124709100E56F19 /* tutorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907E82124709100E56F19 /* tutorScreen.swift */; };
+		99F907EB2124716800E56F19 /* coreSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F907EA2124716800E56F19 /* coreSubject.swift */; };
 		C5E20B7B210A28190089A173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E20B7A210A28190089A173 /* File.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +78,6 @@
 		99DB600F2107D51700C08582 /* userSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSignup.swift; sourceTree = "<group>"; };
 		99DD924021061F5600D823C7 /* Learnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Learnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DD924321061F5600D823C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99DD924521061F5600D823C7 /* receiveacall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = receiveacall.swift; sourceTree = "<group>"; };
 		99DD924821061F5600D823C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		99DD924A21061F5900D823C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99DD924D21061F5900D823C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		99DD926521061F5900D823C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F907E4212358DF00E56F19 /* subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjects.swift; sourceTree = "<group>"; };
 		99F907E62123640C00E56F19 /* clear.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clear.jpeg; sourceTree = "<group>"; };
+		99F907E82124709100E56F19 /* tutorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorScreen.swift; sourceTree = "<group>"; };
+		99F907EA2124716800E56F19 /* coreSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreSubject.swift; sourceTree = "<group>"; };
 		9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learnt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1ECDBABAF671C3B180453C /* Pods-LearntUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AF5B9E702E3FA75207F878D0 /* Pods-Learnt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learnt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Learnt/Pods-Learnt.debug.xcconfig"; sourceTree = "<group>"; };
@@ -164,15 +166,16 @@
 			children = (
 				99DB60092107B43A00C08582 /* Auth0.plist */,
 				99DD924321061F5600D823C7 /* AppDelegate.swift */,
-				99DD924521061F5600D823C7 /* receiveacall.swift */,
 				C5E20B7A210A28190089A173 /* File.swift */,
 				99DB600D2107D24800C08582 /* userLogin.swift */,
 				99DB424121110CAB00E8D68E /* AgoraAudioKit.framework */,
 				99C32EEC210E8F0A009FA420 /* whiteboard.swift */,
 				9914321F21148A85006977FF /* tutorOpen.swift */,
+				99F907E82124709100E56F19 /* tutorScreen.swift */,
 				99F907E62123640C00E56F19 /* clear.jpeg */,
 				99DB600F2107D51700C08582 /* userSignup.swift */,
 				99F907E4212358DF00E56F19 /* subjects.swift */,
+				99F907EA2124716800E56F19 /* coreSubject.swift */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99C32EEE210E8F48009FA420 /* DrawClass.swift */,
 				99DD924A21061F5900D823C7 /* Assets.xcassets */,
@@ -515,9 +518,10 @@
 				99F907E5212358DF00E56F19 /* subjects.swift in Sources */,
 				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
 				9914322021148A85006977FF /* tutorOpen.swift in Sources */,
+				99F907E92124709100E56F19 /* tutorScreen.swift in Sources */,
 				99DB600E2107D24800C08582 /* userLogin.swift in Sources */,
-				99DD924621061F5600D823C7 /* receiveacall.swift in Sources */,
 				99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */,
+				99F907EB2124716800E56F19 /* coreSubject.swift in Sources */,
 				99DD924421061F5600D823C7 /* AppDelegate.swift in Sources */,
 				99C32EEF210E8F48009FA420 /* DrawClass.swift in Sources */,
 			);

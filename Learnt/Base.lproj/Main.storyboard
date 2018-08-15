@@ -114,7 +114,7 @@
         <!--Whiteboard-->
         <scene sceneID="RSe-Ia-0h3">
             <objects>
-                <viewController id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="whiteboard" id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDn-X4-6sQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,9 +546,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Learn"/>
-                                <connections>
-                                    <segue destination="wje-Hf-DoF" kind="show" id="JXb-uO-stC"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oky-vk-4OJ">
                                 <rect key="frame" x="55" y="150" width="284" height="488"/>
@@ -640,63 +637,87 @@
         <!--Subjects-->
         <scene sceneID="Gud-ca-USt">
             <objects>
-                <viewController id="wje-Hf-DoF" sceneMemberID="viewController">
+                <viewController id="wje-Hf-DoF" customClass="coreSubject" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tN6-fN-Wh0">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4u-Oz-nHO">
-                                <rect key="frame" x="189" y="157" width="200" height="100"/>
+                                <rect key="frame" x="189" y="107" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="UsK-xC-Fjf"/>
                                     <constraint firstAttribute="width" constant="200" id="qJX-cx-9bu"/>
                                 </constraints>
                                 <state key="normal" title="Science"/>
+                                <connections>
+                                    <action selector="science" destination="wje-Hf-DoF" eventType="touchUpInside" id="XYa-Df-RJS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLI-KW-2RB">
-                                <rect key="frame" x="636" y="157" width="200" height="100"/>
+                                <rect key="frame" x="636" y="107" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Qym-g1-SLu"/>
                                 </constraints>
                                 <state key="normal" title="English"/>
+                                <connections>
+                                    <action selector="english" destination="wje-Hf-DoF" eventType="touchUpInside" id="xMW-vX-aay"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fb3-w6-p66">
-                                <rect key="frame" x="189" y="275" width="200" height="100"/>
+                                <rect key="frame" x="189" y="225" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="PCY-Rg-jyy"/>
                                 </constraints>
                                 <state key="normal" title="Math"/>
+                                <connections>
+                                    <action selector="math" destination="wje-Hf-DoF" eventType="touchUpInside" id="mqE-a8-SOc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-83-8P7">
-                                <rect key="frame" x="636" y="275" width="200" height="100"/>
+                                <rect key="frame" x="636" y="225" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Social Studies"/>
+                                <connections>
+                                    <action selector="socialStudies" destination="wje-Hf-DoF" eventType="touchUpInside" id="lVk-mJ-tTs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-Ge-mJe">
-                                <rect key="frame" x="636" y="393" width="200" height="100"/>
+                                <rect key="frame" x="636" y="343" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Computer Sciences"/>
+                                <connections>
+                                    <action selector="cs" destination="wje-Hf-DoF" eventType="touchUpInside" id="a15-Bv-gwi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhH-FR-cJ0">
-                                <rect key="frame" x="189" y="393" width="200" height="100"/>
+                                <rect key="frame" x="189" y="343" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="a3g-Kf-Q1x"/>
                                 </constraints>
                                 <state key="normal" title="Foreign Languages"/>
+                                <connections>
+                                    <action selector="fl" destination="wje-Hf-DoF" eventType="touchUpInside" id="JMV-BY-VI6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-mn-MCm">
-                                <rect key="frame" x="636" y="511" width="200" height="100"/>
+                                <rect key="frame" x="636" y="461" width="200" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Fine Arts"/>
+                                <connections>
+                                    <action selector="fineArts" destination="wje-Hf-DoF" eventType="touchUpInside" id="eNI-HL-isQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8d-r3-7oI">
-                                <rect key="frame" x="189" y="511" width="200" height="100"/>
+                                <rect key="frame" x="189" y="461" width="200" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <state key="normal" title="Health"/>
+                                <connections>
+                                    <action selector="health" destination="wje-Hf-DoF" eventType="touchUpInside" id="xdx-fH-s8F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -780,7 +801,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vse-Dm-7L1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3886.5234374999995" y="-302.34375"/>
+            <point key="canvasLocation" x="3441" y="605"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Rqg-s6-tJn">
@@ -850,6 +871,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Learn"/>
+                                <connections>
+                                    <segue destination="wje-Hf-DoF" kind="show" id="3B4-Yc-jtd"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1g5-I7-ACX">
                                 <rect key="frame" x="55" y="150" width="284" height="488"/>
@@ -871,25 +895,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-EA-EK7">
-                                <rect key="frame" x="793" y="595" width="49" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Learn"/>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-bf-MX4">
-                                <rect key="frame" x="755" y="605" width="124" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDr-xw-HT3">
-                                <rect key="frame" x="766" y="613" width="103" height="9"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Get Started"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learnt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-cv-EmR">
                                 <rect key="frame" x="422" y="64" width="99" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
