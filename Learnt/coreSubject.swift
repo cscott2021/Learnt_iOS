@@ -37,7 +37,7 @@ class coreSubject: UIViewController {
     }
     
     func completeSession(){
-        
+        channel_id = user_id
         let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whiteboard") as UIViewController
         
         navigationItem.backBarButtonItem?.tintColor = .white

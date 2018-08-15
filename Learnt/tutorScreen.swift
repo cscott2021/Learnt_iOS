@@ -25,6 +25,10 @@ class tutorScreen: UIViewController {
                 if subject == "subject" {
                     print(data)
                     channel_id = id
+                    let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whiteboard") as UIViewController
+                    
+                    
+                    self?.navigationController?.pushViewController(ViewControllernew1, animated: true)
                 }
                 
             }

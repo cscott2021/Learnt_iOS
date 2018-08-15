@@ -127,7 +127,6 @@ let blackColor: UIButton = {
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    channel_id = "4939awieasdfdofh38"
 
     view.addSubview(colorsBarView)
     setupColorBarView()
