@@ -80,7 +80,6 @@
                                 <state key="normal" title="Log in"/>
                                 <connections>
                                     <action selector="login" destination="WfW-NB-Lb3" eventType="touchUpInside" id="NXb-mU-B7P"/>
-                                    <segue destination="Z1V-aW-eDN" kind="show" id="FCl-oO-By3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,7 +327,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFi-Vd-Y0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7448" y="-231"/>
+            <point key="canvasLocation" x="5473" y="-282"/>
         </scene>
         <!--User Signup-->
         <scene sceneID="Y9J-bO-n18">
@@ -367,7 +366,6 @@
                                 <state key="normal" title="Log in"/>
                                 <connections>
                                     <action selector="signUp" destination="sW0-0r-hZW" eventType="touchUpInside" id="yeB-1p-yfJ"/>
-                                    <segue destination="ogX-4b-dyW" kind="show" id="mft-J5-bTT"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-cs-paY">
@@ -637,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrA-Yy-jKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6639.84375" y="-231.25"/>
+            <point key="canvasLocation" x="4737" y="-282"/>
         </scene>
         <!--Subjects-->
         <scene sceneID="Gud-ca-USt">
