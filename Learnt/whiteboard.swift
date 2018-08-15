@@ -9,6 +9,7 @@
 import Firebase
 import FirebaseDatabase
 import AgoraAudioKit
+import AVFoundation
 var channel_id: String!
 class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     var agoraKit: AgoraRtcEngineKit!
