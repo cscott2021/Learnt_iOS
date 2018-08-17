@@ -514,9 +514,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xnp-lm-QK8">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xnp-lm-QK8">
                                 <rect key="frame" x="237" y="33" width="551" height="703"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-bW-Jm0">
                                         <rect key="frame" x="173" y="50" width="205" height="202"/>
@@ -553,6 +552,9 @@
                                         <state key="normal" title="Accept">
                                             <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="JxN-yh-O0d" kind="show" id="Ux3-zj-wot"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGz-NA-nWY">
                                         <rect key="frame" x="267" y="613" width="276" height="82"/>
@@ -568,10 +570,16 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="centerX" secondItem="Hmw-UJ-yAM" secondAttribute="centerX" id="HkV-Zr-xqC"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="top" secondItem="a7N-RY-8j4" secondAttribute="top" constant="13" id="M0m-Ac-IF0"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="leading" secondItem="a7N-RY-8j4" secondAttribute="leading" constant="237" id="gYV-ZC-AOJ"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="centerY" secondItem="Hmw-UJ-yAM" secondAttribute="centerY" id="oNb-nz-stE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a7N-RY-8j4"/>
                     </view>
                     <connections>
-                        <outlet property="profileView" destination="YRM-bW-Jm0" id="u9V-cn-V3n"/>
+                        <outlet property="profileImg" destination="YRM-bW-Jm0" id="gML-vG-18I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHN-XZ-PuG" userLabel="First Responder" sceneMemberID="firstResponder"/>

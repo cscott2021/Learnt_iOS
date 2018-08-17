@@ -39,5 +39,6 @@ class tutorScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         openTutor()
+
 }
 }
