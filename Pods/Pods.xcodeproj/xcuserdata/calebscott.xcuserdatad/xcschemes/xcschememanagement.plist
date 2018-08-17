@@ -99,30 +99,35 @@
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>Pods-Learnt.xcscheme</key>
+		<key>M13Checkbox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>25</integer>
+			<integer>24</integer>
 		</dict>
-		<key>Pods-LearntTests.xcscheme</key>
+		<key>Pods-Learnt.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>26</integer>
 		</dict>
-		<key>Pods-LearntUITests.xcscheme</key>
+		<key>Pods-LearntTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>27</integer>
 		</dict>
-		<key>Protobuf.xcscheme</key>
+		<key>Pods-LearntUITests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>28</integer>
 		</dict>
-		<key>SDWebImage.xcscheme</key>
+		<key>Protobuf.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>29</integer>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>30</integer>
 		</dict>
 		<key>SimpleKeychain.xcscheme</key>
 		<dict>
@@ -162,7 +167,7 @@
 		<key>nanopb.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>25</integer>
 		</dict>
 	</dict>
 </dict>
