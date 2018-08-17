@@ -10,6 +10,8 @@
 		061E59ECC53CC4F34B921134 /* Pods_LearntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188F7CCA0D10A01962A2CDB6 /* Pods_LearntTests.framework */; };
 		3E8230E75EDC0002E75585E1 /* Pods_Learnt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E32B8A1A7ED573910C235A3 /* Pods_Learnt.framework */; };
 		808724CC50042E495F8679D8 /* Pods_LearntUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3F8C4C130FB3DEAA15D39 /* Pods_LearntUITests.framework */; };
+		846F595321270F8C00B0F7DA /* mainStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F595221270F8C00B0F7DA /* mainStudent.swift */; };
+		846F59552127555500B0F7DA /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 846F59542127555300B0F7DA /* download.png */; };
 		9914322021148A85006977FF /* tutorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9914321F21148A85006977FF /* tutorOpen.swift */; };
 		99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B88899210BBDD0007E6957 /* GoogleService-Info.plist */; };
 		99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C32EEC210E8F0A009FA420 /* whiteboard.swift */; };
@@ -59,6 +61,8 @@
 /* Begin PBXFileReference section */
 		188F7CCA0D10A01962A2CDB6 /* Pods_LearntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		338C664C297A639FCE30743E /* Pods-LearntUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearntUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearntUITests/Pods-LearntUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		846F595221270F8C00B0F7DA /* mainStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainStudent.swift; sourceTree = "<group>"; };
+		846F59542127555300B0F7DA /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		9914321F21148A85006977FF /* tutorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorOpen.swift; sourceTree = "<group>"; };
 		99B88899210BBDD0007E6957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99C32EEC210E8F0A009FA420 /* whiteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whiteboard.swift; sourceTree = "<group>"; };
@@ -172,10 +176,12 @@
 				99C32EEC210E8F0A009FA420 /* whiteboard.swift */,
 				9914321F21148A85006977FF /* tutorOpen.swift */,
 				99F907E82124709100E56F19 /* tutorScreen.swift */,
+				846F595221270F8C00B0F7DA /* mainStudent.swift */,
 				99F907E62123640C00E56F19 /* clear.jpeg */,
 				99DB600F2107D51700C08582 /* userSignup.swift */,
 				99F907E4212358DF00E56F19 /* subjects.swift */,
 				99F907EA2124716800E56F19 /* coreSubject.swift */,
+				846F59542127555300B0F7DA /* download.png */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99C32EEE210E8F48009FA420 /* DrawClass.swift */,
 				99DD924A21061F5900D823C7 /* Assets.xcassets */,
@@ -351,6 +357,7 @@
 				99DD924B21061F5900D823C7 /* Assets.xcassets in Resources */,
 				99DD924921061F5600D823C7 /* Main.storyboard in Resources */,
 				99DB600A2107B43A00C08582 /* Auth0.plist in Resources */,
+				846F59552127555500B0F7DA /* download.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +525,7 @@
 				99F907E5212358DF00E56F19 /* subjects.swift in Sources */,
 				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
 				9914322021148A85006977FF /* tutorOpen.swift in Sources */,
+				846F595321270F8C00B0F7DA /* mainStudent.swift in Sources */,
 				99F907E92124709100E56F19 /* tutorScreen.swift in Sources */,
 				99DB600E2107D24800C08582 /* userLogin.swift in Sources */,
 				99C32EED210E8F0A009FA420 /* whiteboard.swift in Sources */,
