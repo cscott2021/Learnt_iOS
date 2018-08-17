@@ -421,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="-717" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutor Screen-->
         <scene sceneID="K7K-Xy-76y">
             <objects>
-                <viewController storyboardIdentifier="tutor" id="Z1V-aW-eDN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyU-i3-ToQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,10 +506,10 @@
             </objects>
             <point key="canvasLocation" x="1397.4609375" y="-2229.6875"/>
         </scene>
-        <!--Pending-->
+        <!--Accept View-->
         <scene sceneID="ZFS-F5-QOp">
             <objects>
-                <viewController id="h5M-1j-dxV" customClass="pending" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pending" id="h5M-1j-dxV" customClass="acceptView" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hmw-UJ-yAM">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

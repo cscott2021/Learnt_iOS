@@ -21,11 +21,11 @@ class tutorScreen: UIViewController {
                 let name        = data["name"],
                 let subject        = data["subject"]
             {
-                
+                print(data)
+
                 if subject == "subject" {
-                    print(data)
                     channel_id = id
-                    let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whiteboard") as UIViewController
+                    let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pending") as UIViewController
                     
                     
                     self?.navigationController?.pushViewController(ViewControllernew1, animated: true)
@@ -38,6 +38,6 @@ class tutorScreen: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        openTutor()
 }
 }
