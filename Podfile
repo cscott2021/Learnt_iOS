@@ -11,6 +11,7 @@ target 'Learnt' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'FirebaseUI'
+pod 'M13Checkbox'
 
   target 'LearntTests' do
     inherit! :search_paths

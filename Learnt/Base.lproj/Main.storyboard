@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JxN-yh-O0d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainView" id="BYZ-38-t0r" customClass="ViewController" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,15 +21,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iS4-J0-s4C">
                                 <rect key="frame" x="412" y="133" width="201" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Log in"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="50"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="WfW-NB-Lb3" kind="show" id="C4a-Fg-myv"/>
+                                    <segue destination="aZq-al-15I" kind="show" id="Cb8-KV-P1u"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQd-o3-jdf">
                                 <rect key="frame" x="412" y="360" width="201" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign up"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="50"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="sW0-0r-hZW" kind="show" id="5KD-XT-JkR"/>
                                 </connections>
@@ -54,14 +57,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-mr-thP">
-                                <rect key="frame" x="437" y="169" width="74" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WG0-mr-thP">
+                                <rect key="frame" x="429" y="169" width="82" height="44"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hra-A5-UGL">
-                                <rect key="frame" x="367" y="273" width="214" height="30"/>
+                                <rect key="frame" x="367" y="280" width="214" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Vxh-Z6-GTN"/>
                                 </constraints>
@@ -70,7 +73,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gvp-35-0Np">
-                                <rect key="frame" x="367" y="343" width="214" height="30"/>
+                                <rect key="frame" x="367" y="350" width="214" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KVP-ZZ-j3y"/>
                                 </constraints>
@@ -79,8 +82,11 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9j2-Lb-qdM">
-                                <rect key="frame" x="419" y="434" width="110" height="72"/>
-                                <state key="normal" title="Log in"/>
+                                <rect key="frame" x="419" y="441" width="110" height="65"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="24"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="login" destination="WfW-NB-Lb3" eventType="touchUpInside" id="NXb-mU-B7P"/>
                                 </connections>
@@ -112,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aDe-LL-Jp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-744" y="-1266"/>
+            <point key="canvasLocation" x="-19.921875" y="-1266.40625"/>
         </scene>
         <!--Whiteboard-->
         <scene sceneID="RSe-Ia-0h3">
@@ -341,13 +347,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7d-45-NzA">
-                                <rect key="frame" x="459" y="216" width="106" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <rect key="frame" x="448" y="216" width="128.5" height="53"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-HA-afo">
-                                <rect key="frame" x="405" y="320" width="214" height="30"/>
+                                <rect key="frame" x="405" y="336" width="214" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="tOG-6t-vUU"/>
                                 </constraints>
@@ -356,7 +362,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tHu-ik-dKN">
-                                <rect key="frame" x="405" y="390" width="214" height="30"/>
+                                <rect key="frame" x="405" y="406" width="214" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9DM-4c-qtZ"/>
                                 </constraints>
@@ -365,14 +371,17 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-JS-w2D">
-                                <rect key="frame" x="457" y="541" width="110" height="72"/>
-                                <state key="normal" title="Log in"/>
+                                <rect key="frame" x="457" y="557" width="110" height="56"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="20"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="signUp" destination="sW0-0r-hZW" eventType="touchUpInside" id="yeB-1p-yfJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DvG-cs-paY">
-                                <rect key="frame" x="405" y="468" width="214" height="30"/>
+                                <rect key="frame" x="405" y="484" width="214" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fha-9q-rfa"/>
                                 </constraints>
@@ -412,44 +421,23 @@
             </objects>
             <point key="canvasLocation" x="-717" y="120"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutor Screen-->
         <scene sceneID="K7K-Xy-76y">
             <objects>
-                <viewController id="Z1V-aW-eDN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyU-i3-ToQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you ready to teach?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHP-1b-20S">
-                                <rect key="frame" x="613" y="95" width="336" height="578"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="35"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello &quot;Name&quot;," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h82-cB-k8P">
-                                <rect key="frame" x="687" y="301" width="188" height="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h82-cB-k8P">
+                                <rect key="frame" x="696" y="331" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-OT-pCT">
-                                <rect key="frame" x="661" y="123" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F19-rH-1wR">
-                                <rect key="frame" x="20" y="198" width="137" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdR-2W-vPZ">
-                                <rect key="frame" x="20" y="375" width="137" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Requests" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgA-YD-FD4">
-                                <rect key="frame" x="90" y="123" width="252" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subjects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgA-YD-FD4">
+                                <rect key="frame" x="90" y="123" width="252" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="48"/>
                                 <nil key="textColor"/>
@@ -463,6 +451,52 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="47"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejz-k8-4ey">
+                                <rect key="frame" x="661" y="116" width="327" height="536"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moK-YR-TJp">
+                                        <rect key="frame" x="43" y="196" width="240" height="118"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Hello “Name,”
+</string>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fE7-JY-aRf">
+                                        <rect key="frame" x="139" y="425" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qfp-OT-pCT">
+                                        <rect key="frame" x="43" y="26" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Ready to teach?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XfB-yN-u8S">
+                                        <rect key="frame" x="43" y="331" width="240" height="73"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yEV-kl-dk9">
+                                <rect key="frame" x="68" y="189" width="296" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="oOq-TZ-h5d">
+                                        <rect key="frame" x="0.0" y="28" width="296" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oOq-TZ-h5d" id="YPx-Zr-gSF">
+                                            <rect key="frame" x="0.0" y="0.0" width="296" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9Dl-Vk-HdG"/>
@@ -472,20 +506,85 @@
             </objects>
             <point key="canvasLocation" x="1397.4609375" y="-2229.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Accept View-->
         <scene sceneID="ZFS-F5-QOp">
             <objects>
-                <viewController id="h5M-1j-dxV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pending" id="h5M-1j-dxV" customClass="acceptView" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hmw-UJ-yAM">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xnp-lm-QK8">
+                                <rect key="frame" x="237" y="33" width="551" height="703"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-bW-Jm0">
+                                        <rect key="frame" x="173" y="50" width="205" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo3-Gk-cEs">
+                                        <rect key="frame" x="164" y="331" width="223" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Subject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-RR-B0N">
+                                        <rect key="frame" x="164" y="513" width="223" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="needs help with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKk-nT-XKz">
+                                        <rect key="frame" x="200" y="428" width="166" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="27"/>
+                                        <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw0-rv-hMx">
+                                        <rect key="frame" x="8" y="613" width="251" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.87850856680447031" green="0.88935435157983411" blue="0.88935435157983411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
+                                        <state key="normal" title="Accept">
+                                            <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="JxN-yh-O0d" kind="show" id="Ux3-zj-wot"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGz-NA-nWY">
+                                        <rect key="frame" x="267" y="613" width="276" height="82"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.87867218255996704" green="0.89011043310165405" blue="0.89017075300216675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
+                                        <state key="normal" title="Decline">
+                                            <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94373380829999998" green="0.94373380829999998" blue="0.94373380829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="centerX" secondItem="Hmw-UJ-yAM" secondAttribute="centerX" id="HkV-Zr-xqC"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="top" secondItem="a7N-RY-8j4" secondAttribute="top" constant="13" id="M0m-Ac-IF0"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="leading" secondItem="a7N-RY-8j4" secondAttribute="leading" constant="237" id="gYV-ZC-AOJ"/>
+                            <constraint firstItem="Xnp-lm-QK8" firstAttribute="centerY" secondItem="Hmw-UJ-yAM" secondAttribute="centerY" id="oNb-nz-stE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="a7N-RY-8j4"/>
                     </view>
+                    <connections>
+                        <outlet property="profileImg" destination="YRM-bW-Jm0" id="gML-vG-18I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sHN-XZ-PuG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2029" y="-2230"/>
+            <point key="canvasLocation" x="2028.5156249999998" y="-2230.46875"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oW1-LL-SPR">
@@ -496,10 +595,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Currency " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT3-NE-nrZ">
-                                <rect key="frame" x="409" y="64" width="188" height="50"/>
+                                <rect key="frame" x="332" y="76" width="360" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="60"/>
+                                <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -509,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDa-BB-K0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2353.7109375" y="-1109.375"/>
+            <point key="canvasLocation" x="3077.9296875" y="-1109.375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tZR-yh-eJr">
@@ -538,6 +637,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7L-TH-LtP">
                                 <rect key="frame" x="658" y="150" width="310" height="525"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-8a-HBP">
                                         <rect key="frame" x="35" y="55" width="240" height="128"/>
@@ -612,6 +712,17 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="47"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+=======
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-qG-8G2">
+                                <rect key="frame" x="118" y="121" width="179" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
+                                <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+>>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gGa-xW-elt"/>
@@ -620,7 +731,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWq-VG-0u2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333.7890625" y="-266.40625"/>
+            <point key="canvasLocation" x="1730" y="841"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dUO-rf-x7U">
@@ -633,8 +744,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finding you a LEARNT certified tutor..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NxW-Qu-wZa">
                                 <rect key="frame" x="103" y="138" width="830" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="30"/>
+                                <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tXL-7W-xhz">
@@ -665,7 +776,10 @@
                                     <constraint firstAttribute="height" constant="100" id="UsK-xC-Fjf"/>
                                     <constraint firstAttribute="width" constant="200" id="qJX-cx-9bu"/>
                                 </constraints>
-                                <state key="normal" title="Science"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Science">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="science" destination="wje-Hf-DoF" eventType="touchUpInside" id="XYa-Df-RJS"/>
                                 </connections>
@@ -676,7 +790,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="Qym-g1-SLu"/>
                                 </constraints>
-                                <state key="normal" title="English"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="English">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="english" destination="wje-Hf-DoF" eventType="touchUpInside" id="xMW-vX-aay"/>
                                 </connections>
@@ -687,7 +804,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="PCY-Rg-jyy"/>
                                 </constraints>
-                                <state key="normal" title="Math"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Math">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="math" destination="wje-Hf-DoF" eventType="touchUpInside" id="mqE-a8-SOc"/>
                                 </connections>
@@ -695,7 +815,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGY-83-8P7">
                                 <rect key="frame" x="636" y="225" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Social Studies"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Social Studies">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="socialStudies" destination="wje-Hf-DoF" eventType="touchUpInside" id="lVk-mJ-tTs"/>
                                 </connections>
@@ -703,7 +826,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbH-Ge-mJe">
                                 <rect key="frame" x="636" y="343" width="200" height="100"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Computer Sciences"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Computer Sciences">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="cs" destination="wje-Hf-DoF" eventType="touchUpInside" id="a15-Bv-gwi"/>
                                 </connections>
@@ -714,7 +840,10 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="a3g-Kf-Q1x"/>
                                 </constraints>
-                                <state key="normal" title="Foreign Languages"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Foreign Languages">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="fl" destination="wje-Hf-DoF" eventType="touchUpInside" id="JMV-BY-VI6"/>
                                 </connections>
@@ -722,7 +851,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yR-mn-MCm">
                                 <rect key="frame" x="636" y="461" width="200" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Fine Arts"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Fine Arts">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="fineArts" destination="wje-Hf-DoF" eventType="touchUpInside" id="eNI-HL-isQ"/>
                                 </connections>
@@ -730,7 +862,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8d-r3-7oI">
                                 <rect key="frame" x="189" y="461" width="200" height="150"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="Health"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <state key="normal" title="Health">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="health" destination="wje-Hf-DoF" eventType="touchUpInside" id="xdx-fH-s8F"/>
                                 </connections>
@@ -799,7 +934,10 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl9-pc-Gkf">
                                             <rect key="frame" x="0.0" y="0.0" width="156" height="93"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
+                                            <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
                                         </button>
                                     </subviews>
                                 </view>
@@ -825,7 +963,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogX-4b-dyW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ies-3q-kxa">
-                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -840,7 +978,11 @@
         <!--Main Student-->
         <scene sceneID="cYj-Gg-n24">
             <objects>
+<<<<<<< HEAD
                 <viewController id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+=======
+                <viewController storyboardIdentifier="student" id="U58-pR-2ko" sceneMemberID="viewController">
+>>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
                     <view key="view" contentMode="scaleToFill" id="HUK-4q-QPk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -951,10 +1093,222 @@
             </objects>
             <point key="canvasLocation" x="2333.7890625" y="-266.40625"/>
         </scene>
+<<<<<<< HEAD
+=======
+        <!--View Controller-->
+        <scene sceneID="kGn-ow-UVk">
+            <objects>
+                <viewController id="Zez-HD-4Q2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TJ2-ON-wT3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="e8Q-pZ-uvR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="haq-Lj-6La" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="745"/>
+        </scene>
+        <!--User Login-->
+        <scene sceneID="n0d-f1-hCA">
+            <objects>
+                <viewController id="hSm-91-AFn" customClass="userLogin" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMm-lz-CVm">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icg-5w-RuT">
+                                <rect key="frame" x="467" y="216" width="82" height="44"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dx-tB-18C">
+                                <rect key="frame" x="405" y="327" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1Hl-fU-JTx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x4r-J7-TPz">
+                                <rect key="frame" x="405" y="397" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Mh2-GK-PPF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhA-z9-hZ3">
+                                <rect key="frame" x="457" y="488" width="110" height="65"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="24"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="hSm-91-AFn" eventType="touchUpInside" id="m88-Ub-SS0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4dx-tB-18C" firstAttribute="leading" secondItem="8D2-5H-UOe" secondAttribute="leading" constant="405" id="ApQ-8m-h3g"/>
+                            <constraint firstItem="JhA-z9-hZ3" firstAttribute="width" secondItem="eMm-lz-CVm" secondAttribute="height" multiplier="55:384" id="Du7-pd-eVe"/>
+                            <constraint firstItem="JhA-z9-hZ3" firstAttribute="top" secondItem="x4r-J7-TPz" secondAttribute="bottom" constant="61" id="GB7-1B-Pvg"/>
+                            <constraint firstItem="icg-5w-RuT" firstAttribute="leading" secondItem="8D2-5H-UOe" secondAttribute="leading" constant="467" id="Kqk-q2-XxB"/>
+                            <constraint firstItem="4dx-tB-18C" firstAttribute="leading" secondItem="x4r-J7-TPz" secondAttribute="leading" id="Lmj-js-U2j"/>
+                            <constraint firstItem="JhA-z9-hZ3" firstAttribute="leading" secondItem="8D2-5H-UOe" secondAttribute="leading" constant="457" id="Rql-si-7lf"/>
+                            <constraint firstItem="x4r-J7-TPz" firstAttribute="centerX" secondItem="JhA-z9-hZ3" secondAttribute="centerX" id="XA6-oJ-7Ks"/>
+                            <constraint firstItem="icg-5w-RuT" firstAttribute="top" secondItem="8D2-5H-UOe" secondAttribute="top" constant="196" id="XfJ-Kr-lRQ"/>
+                            <constraint firstItem="4dx-tB-18C" firstAttribute="top" secondItem="icg-5w-RuT" secondAttribute="bottom" constant="67" id="j67-v4-u2k"/>
+                            <constraint firstItem="4dx-tB-18C" firstAttribute="trailing" secondItem="x4r-J7-TPz" secondAttribute="trailing" id="tfT-MC-6Am"/>
+                            <constraint firstItem="x4r-J7-TPz" firstAttribute="top" secondItem="4dx-tB-18C" secondAttribute="bottom" constant="40" id="wHM-gv-mrm"/>
+                            <constraint firstItem="8D2-5H-UOe" firstAttribute="bottom" secondItem="JhA-z9-hZ3" secondAttribute="bottom" constant="215" id="xbC-um-EO7"/>
+                            <constraint firstItem="icg-5w-RuT" firstAttribute="centerX" secondItem="4dx-tB-18C" secondAttribute="centerX" constant="-4" id="zGd-dy-mzK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8D2-5H-UOe"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="4dx-tB-18C" id="Lx7-Bn-s0K"/>
+                        <outlet property="password" destination="x4r-J7-TPz" id="c4I-5K-2Nn"/>
+                        <outlet property="signIn" destination="JhA-z9-hZ3" id="7qT-3d-ZJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jd-4w-3zV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19.921875" y="-1266.40625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="q5w-Qx-wem">
+            <objects>
+                <viewController id="fHS-CX-Qar" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zoa-eG-Xuo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WV1-cD-tCH">
+                                <rect key="frame" x="406" y="113" width="213" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tutor"/>
+                                <connections>
+                                    <segue destination="hSm-91-AFn" kind="show" id="Jnc-sP-Om0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-Ja-Lfy">
+                                <rect key="frame" x="435" y="332" width="155" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Student"/>
+                                <connections>
+                                    <segue destination="Hmv-BP-Czm" kind="show" id="tEL-bV-yur"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3A4-3D-gFA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JTN-EP-WrO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ri-qx-9o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724.21875" y="-1109.375"/>
+        </scene>
+        <!--User Student Login-->
+        <scene sceneID="BON-YM-4so">
+            <objects>
+                <viewController id="Hmv-BP-Czm" customClass="userStudentLogin" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3mb-zm-GaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teg-Qc-UGm">
+                                <rect key="frame" x="467" y="216" width="82" height="44"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eaO-UX-Taw">
+                                <rect key="frame" x="405" y="327" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pKU-2Q-TFv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPC-BN-JuP">
+                                <rect key="frame" x="405" y="397" width="214" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cK6-g6-jj8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYA-8D-Y0u">
+                                <rect key="frame" x="457" y="488" width="110" height="65"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="24"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login" destination="Hmv-BP-Czm" eventType="touchUpInside" id="50B-tQ-MRa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="teg-Qc-UGm" firstAttribute="top" secondItem="emy-ju-qU4" secondAttribute="top" constant="196" id="4Ud-w3-yjS"/>
+                            <constraint firstItem="TYA-8D-Y0u" firstAttribute="top" secondItem="xPC-BN-JuP" secondAttribute="bottom" constant="61" id="A73-vt-Z2a"/>
+                            <constraint firstItem="eaO-UX-Taw" firstAttribute="leading" secondItem="xPC-BN-JuP" secondAttribute="leading" id="FOW-7g-giU"/>
+                            <constraint firstItem="eaO-UX-Taw" firstAttribute="trailing" secondItem="xPC-BN-JuP" secondAttribute="trailing" id="M7i-AK-F8C"/>
+                            <constraint firstItem="teg-Qc-UGm" firstAttribute="centerX" secondItem="eaO-UX-Taw" secondAttribute="centerX" constant="-4" id="QBK-eq-WXe"/>
+                            <constraint firstItem="eaO-UX-Taw" firstAttribute="leading" secondItem="emy-ju-qU4" secondAttribute="leading" constant="405" id="QXP-4B-1H8"/>
+                            <constraint firstItem="TYA-8D-Y0u" firstAttribute="width" secondItem="3mb-zm-GaQ" secondAttribute="height" multiplier="55:384" id="Ueo-ak-Tzz"/>
+                            <constraint firstItem="emy-ju-qU4" firstAttribute="bottom" secondItem="TYA-8D-Y0u" secondAttribute="bottom" constant="215" id="ZXj-RC-Rz9"/>
+                            <constraint firstItem="teg-Qc-UGm" firstAttribute="leading" secondItem="emy-ju-qU4" secondAttribute="leading" constant="467" id="fPO-zr-T3Z"/>
+                            <constraint firstItem="TYA-8D-Y0u" firstAttribute="leading" secondItem="emy-ju-qU4" secondAttribute="leading" constant="457" id="pRh-gW-6oi"/>
+                            <constraint firstItem="xPC-BN-JuP" firstAttribute="centerX" secondItem="TYA-8D-Y0u" secondAttribute="centerX" id="uea-mJ-VJ9"/>
+                            <constraint firstItem="xPC-BN-JuP" firstAttribute="top" secondItem="eaO-UX-Taw" secondAttribute="bottom" constant="40" id="uwd-WI-ffa"/>
+                            <constraint firstItem="eaO-UX-Taw" firstAttribute="top" secondItem="teg-Qc-UGm" secondAttribute="bottom" constant="67" id="z0s-l1-tbQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="emy-ju-qU4"/>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="eaO-UX-Taw" id="VMC-Wu-hcS"/>
+                        <outlet property="password" destination="xPC-BN-JuP" id="ABs-Wq-e6A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqS-ls-qFB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19.921875" y="-577.34375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pNq-Bl-cdR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aZq-al-15I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EzX-9Q-ISc">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fHS-CX-Qar" kind="relationship" relationship="rootViewController" id="EqZ-bR-XDN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ptt-66-m9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1448.4375" y="-1109.375"/>
+        </scene>
+>>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
     </scenes>
     <resources>
+        <image name="Unknown.jpeg" width="225" height="225"/>
         <image name="clear.jpeg" width="355" height="355"/>
         <image name="download.png" width="225" height="225"/>
     </resources>
-    <color key="tintColor" red="0.0" green="0.4481443007" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -13,27 +13,35 @@ import Firebase
 class coreSubject: UIViewController {
     @IBAction func science(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func english(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func math(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func socialStudies(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func fl(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func cs(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func fineArts(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     @IBAction func health(){
         tutorOpen().newSession(user: user_id)
+        completeSession()
     }
     
     func completeSession(){
