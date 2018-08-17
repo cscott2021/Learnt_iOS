@@ -21,6 +21,11 @@ class userSignup: UIViewController, FUIAuthDelegate {
                 Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (user, error) in
                     // ...
                     print("\(String(describing: user))")
+                    let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainView") as UIViewController
+                    
+                    self.navigationItem.backBarButtonItem?.tintColor = .white
+                    
+                    self.navigationController?.pushViewController(ViewControllernew1, animated: true)
                 }
             }
     }
