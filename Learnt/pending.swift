@@ -15,7 +15,7 @@ class pending: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profileView.frame.cornerRadius = profileView.frame.width / 2
+        profileView.layer.cornerRadius = profileView.frame.width / 2
         profileView.clipsToBounds = true
         
         
