@@ -27,7 +27,7 @@ class whiteboard: UIViewController, AgoraRtcEngineDelegate {
     func leaveChannel() {
         agoraKit.leaveChannel(nil)
     }
-    private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "Drawing")
+    private lazy var drawRef: DatabaseReference = Database.database().reference(withPath: "drawing_\(String(describing: channel_id!))")
     private var drawRefHandle: DatabaseHandle?
 
 var lastPoint = CGPoint.zero
