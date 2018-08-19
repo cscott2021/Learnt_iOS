@@ -19,11 +19,12 @@ class tutorScreen: UIViewController {
             if  let data        = snapshot.value as? [String: String],
                 let id          = data["user_id"],
                 let name        = data["name"],
-                let subject        = data["subject"]
+                let subject        = data["subject"],
+                let status       = data["status"]
             {
                 print(data)
-
-                if subject == "subject" {
+                
+                if subject == "subject" && status == "open" {
                     channel_id = id
                     let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pending") as UIViewController
                     
