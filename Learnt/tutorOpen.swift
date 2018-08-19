@@ -13,7 +13,7 @@ public class tutorOpen {
     func newSession(user: String){
         let ref = tutor_ref.child(user)
         
-        let message = ["user_id": user, "name": "This is the name", "subject": "subject"]
+        let message = ["user_id": user, "name": "This is the name", "subject": "subject", "status": "open"]
         ref.setValue(message)
         
     }
