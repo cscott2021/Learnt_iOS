@@ -634,10 +634,11 @@
                                     <barButtonItem title="Settings" id="xy7-4F-mhQ"/>
                                 </items>
                             </toolbar>
+                                                                </subviews>
+
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g7L-TH-LtP">
                                 <rect key="frame" x="658" y="150" width="310" height="525"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pyn-8a-HBP">
                                         <rect key="frame" x="35" y="55" width="240" height="128"/>
@@ -690,7 +691,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-qG-8G2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-qF-8G2">
                                         <rect key="frame" x="196" y="8" width="85" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="17"/>
@@ -712,9 +713,7 @@
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="47"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-=======
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Past Lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2W-qG-8G2">
                                 <rect key="frame" x="118" y="121" width="179" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -722,8 +721,7 @@
                                 <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
->>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
-                        </subviews>
+
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gGa-xW-elt"/>
                     </view>
@@ -978,11 +976,7 @@
         <!--Main Student-->
         <scene sceneID="cYj-Gg-n24">
             <objects>
-<<<<<<< HEAD
-                <viewController id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
-=======
                 <viewController storyboardIdentifier="student" id="U58-pR-2ko" sceneMemberID="viewController">
->>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
                     <view key="view" contentMode="scaleToFill" id="HUK-4q-QPk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1093,8 +1087,7 @@
             </objects>
             <point key="canvasLocation" x="2333.7890625" y="-266.40625"/>
         </scene>
-<<<<<<< HEAD
-=======
+
         <!--View Controller-->
         <scene sceneID="kGn-ow-UVk">
             <objects>
@@ -1303,7 +1296,7 @@
             </objects>
             <point key="canvasLocation" x="-1448.4375" y="-1109.375"/>
         </scene>
->>>>>>> 0ffb684d9bacae7373064228f88ef4b0cb8b59e1
+
     </scenes>
     <resources>
         <image name="Unknown.jpeg" width="225" height="225"/>
