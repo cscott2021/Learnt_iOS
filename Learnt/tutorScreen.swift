@@ -11,6 +11,7 @@ import UIKit
 import FirebaseUI
 import Firebase
 class tutorScreen: UIViewController {
+    @IBOutlet weak var img: UIImageView!
     func openTutor() {
         let query = Database.database().reference().child("need_tutor").queryLimited(toLast: 10)
         
@@ -38,6 +39,8 @@ class tutorScreen: UIViewController {
 
     
     override func viewDidLoad() {
+        img.layer.cornerRadius = img.frame.size.width/2
+        img.clipsToBounds = true
         super.viewDidLoad()
         openTutor()
 
