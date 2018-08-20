@@ -19,10 +19,10 @@ class mainStudent: UIViewController {
         super.viewDidLoad()
         
         shadowView.layer.cornerRadius = 3
-        shadowView.layer.shadowColor = UIcolor(red:0/255.0, green:0/255.0, blue:0/255.0, alpha:1.0).cgColor
-        shadowView.layer.shadowOFFset = CGSize(width: 0, height: 1.75)
-        shadowView.layer.shadowRadius = 1.7
-        shadowView.layer.shadowOpacity = 0.45
+        shadowView.layer.shadowColor = UIColor(red:0/255.0, green:0/255.0, blue:0/255.0, alpha:1.0).cgColor
+        shadowView.layer.shadowOffset = CGSize(width: 7, height: 7)
+        shadowView.layer.shadowRadius = 1.5
+        shadowView.layer.shadowOpacity = 0.08
          
         
         img.layer.cornerRadius = img.frame.size.width/2
