@@ -14,6 +14,15 @@ import FirebaseUI
 class acceptView: UIViewController {
     
     @IBOutlet var profileImg: UIImageView!
+    @IBAction func accept(){
+    //    let values = ["status": "closed"]
+        let _ = Database.database().reference().root.child("need_tutor").child(channel_id).updateChildValues(["status": "closed"])
+        
+        let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whiteboard") as UIViewController
+        
+        
+        self.navigationController?.pushViewController(ViewControllernew1, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
