@@ -13,6 +13,7 @@
 		846F595321270F8C00B0F7DA /* mainStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846F595221270F8C00B0F7DA /* mainStudent.swift */; };
 		846F59552127555500B0F7DA /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 846F59542127555300B0F7DA /* download.png */; };
 		9914322021148A85006977FF /* tutorOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9914321F21148A85006977FF /* tutorOpen.swift */; };
+		99759CCF212DD61B00DBBEB0 /* waiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99759CCE212DD61B00DBBEB0 /* waiting.swift */; };
 		999A6B1221275F8100A45074 /* acceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A6B1121275F8100A45074 /* acceptView.swift */; };
 		999A6B142127625000A45074 /* Unknown.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 999A6B132127624F00A45074 /* Unknown.jpeg */; };
 		99B8889A210BBDD0007E6957 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99B88899210BBDD0007E6957 /* GoogleService-Info.plist */; };
@@ -67,6 +68,7 @@
 		846F595221270F8C00B0F7DA /* mainStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainStudent.swift; sourceTree = "<group>"; };
 		846F59542127555300B0F7DA /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
 		9914321F21148A85006977FF /* tutorOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tutorOpen.swift; sourceTree = "<group>"; };
+		99759CCE212DD61B00DBBEB0 /* waiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waiting.swift; sourceTree = "<group>"; };
 		999A6B1121275F8100A45074 /* acceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acceptView.swift; sourceTree = "<group>"; };
 		999A6B132127624F00A45074 /* Unknown.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Unknown.jpeg; sourceTree = SOURCE_ROOT; };
 		99B88899210BBDD0007E6957 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				999A6B1121275F8100A45074 /* acceptView.swift */,
 				99F907E4212358DF00E56F19 /* subjects.swift */,
 				99F907EA2124716800E56F19 /* coreSubject.swift */,
+				99759CCE212DD61B00DBBEB0 /* waiting.swift */,
 				846F59542127555300B0F7DA /* download.png */,
 				99DD924721061F5600D823C7 /* Main.storyboard */,
 				99C32EEE210E8F48009FA420 /* DrawClass.swift */,
@@ -534,6 +537,7 @@
 				C5E20B7B210A28190089A173 /* File.swift in Sources */,
 				99F907E5212358DF00E56F19 /* subjects.swift in Sources */,
 				999A6B1221275F8100A45074 /* acceptView.swift in Sources */,
+				99759CCF212DD61B00DBBEB0 /* waiting.swift in Sources */,
 				99DB60102107D51700C08582 /* userSignup.swift in Sources */,
 				9914322021148A85006977FF /* tutorOpen.swift in Sources */,
 				846F595321270F8C00B0F7DA /* mainStudent.swift in Sources */,

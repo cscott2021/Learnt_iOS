@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -464,7 +464,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moK-YR-TJp">
                                         <rect key="frame" x="42" y="209" width="240" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-
                                         <string key="text">Hello,           Caleb Scott
 </string>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
@@ -566,7 +565,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-RR-B0N">
-                                        <rect key="frame" x="163.5" y="513" width="223" height="40"/>
+                                        <rect key="frame" x="163.5" y="501" width="223" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nzW-6r-hwV"/>
                                         </constraints>
@@ -575,13 +574,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="needs help with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKk-nT-XKz">
-                                        <rect key="frame" x="200" y="428" width="166" height="33"/>
+                                        <rect key="frame" x="200" y="416" width="166" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="vMS-ZN-qux"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="27"/>
                                         <color key="textColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw0-rv-hMx">
-                                        <rect key="frame" x="8" y="613" width="251" height="81"/>
+                                        <rect key="frame" x="8" y="601" width="251" height="93"/>
                                         <color key="backgroundColor" red="0.87850856680447031" green="0.88935435157983411" blue="0.88935435157983411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="251" id="lgt-lM-wU6"/>
@@ -595,7 +597,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGz-NA-nWY">
-                                        <rect key="frame" x="267" y="613" width="275" height="81"/>
+                                        <rect key="frame" x="267" y="601" width="275" height="93"/>
                                         <color key="backgroundColor" red="0.87867218255996704" green="0.89011043310165405" blue="0.89017075300216675" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
                                         <state key="normal" title="Decline">
@@ -611,16 +613,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.94373380829999998" green="0.94373380829999998" blue="0.94373380829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="zc3-RR-B0N" firstAttribute="top" secondItem="OKk-nT-XKz" secondAttribute="bottom" constant="41" id="04e-ZY-hIm"/>
+                                    <constraint firstItem="OKk-nT-XKz" firstAttribute="leading" secondItem="Xnp-lm-QK8" secondAttribute="leading" constant="200" id="7Uf-PX-3wE"/>
                                     <constraint firstItem="Vo3-Gk-cEs" firstAttribute="leading" secondItem="zc3-RR-B0N" secondAttribute="leading" constant="-163.5" id="8r3-wz-aQK"/>
-                                    <constraint firstItem="OKk-nT-XKz" firstAttribute="leading" secondItem="Xnp-lm-QK8" secondAttribute="leading" constant="200" id="9GG-v3-cNu"/>
-                                    <constraint firstItem="zc3-RR-B0N" firstAttribute="top" secondItem="OKk-nT-XKz" secondAttribute="bottom" constant="52" id="Ady-c2-qbP"/>
                                     <constraint firstItem="Vo3-Gk-cEs" firstAttribute="trailing" secondItem="zc3-RR-B0N" secondAttribute="trailing" constant="163.5" id="An0-61-RJQ"/>
                                     <constraint firstItem="YRM-bW-Jm0" firstAttribute="centerX" secondItem="Vo3-Gk-cEs" secondAttribute="centerX" id="Hy9-Ea-QyF"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="top" secondItem="QGz-NA-nWY" secondAttribute="top" id="JVL-ZN-CVS"/>
+                                    <constraint firstItem="OKk-nT-XKz" firstAttribute="top" secondItem="Vo3-Gk-cEs" secondAttribute="bottom" constant="45" id="K3M-Kp-ddZ"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="baseline" secondItem="QGz-NA-nWY" secondAttribute="firstBaseline" id="Kw1-kr-QQ7"/>
                                     <constraint firstItem="QGz-NA-nWY" firstAttribute="trailing" secondItem="Xnp-lm-QK8" secondAttribute="trailingMargin" id="Oa8-fY-WlQ"/>
                                     <constraint firstItem="YRM-bW-Jm0" firstAttribute="centerX" secondItem="Xnp-lm-QK8" secondAttribute="centerX" id="RTz-Vd-DN7"/>
-                                    <constraint firstItem="OKk-nT-XKz" firstAttribute="top" secondItem="Vo3-Gk-cEs" secondAttribute="bottom" constant="57" id="T8m-ek-pIM"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="top" secondItem="zc3-RR-B0N" secondAttribute="bottom" constant="60" id="Yaq-dV-4yp"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="bottom" secondItem="Xnp-lm-QK8" secondAttribute="bottomMargin" id="Yx6-9P-Dd4"/>
                                     <constraint firstItem="Vo3-Gk-cEs" firstAttribute="centerY" secondItem="Xnp-lm-QK8" secondAttribute="centerY" id="eW6-Xo-w6X"/>
@@ -705,10 +707,10 @@
             </objects>
             <point key="canvasLocation" x="1730" y="841"/>
         </scene>
-        <!--View Controller-->
+        <!--Waiting-->
         <scene sceneID="dUO-rf-x7U">
             <objects>
-                <viewController id="rH2-ua-Zgu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="waiting" id="rH2-ua-Zgu" customClass="waiting" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fAX-OT-0Y4">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
