@@ -123,7 +123,7 @@
         <!--Whiteboard-->
         <scene sceneID="RSe-Ia-0h3">
             <objects>
-                <viewController storyboardIdentifier="whiteboard" id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="whiteboard" title="Whiteboard" id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDn-X4-6sQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="-717" y="120"/>
         </scene>
-        <!--Tutor Screen-->
+        <!--Tutor-->
         <scene sceneID="K7K-Xy-76y">
             <objects>
-                <viewController storyboardIdentifier="tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutor" title="Tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyU-i3-ToQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -946,10 +946,10 @@
             </objects>
             <point key="canvasLocation" x="1624" y="-234"/>
         </scene>
-        <!--Main Student-->
+        <!--Student-->
         <scene sceneID="cYj-Gg-n24">
             <objects>
-                <viewController storyboardIdentifier="student" id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="student" title="Student" id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUK-4q-QPk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
