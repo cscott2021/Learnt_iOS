@@ -18,19 +18,16 @@ class waiting: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         wait = true
-        let query = Database.database().reference().child("need_tutor").child(user_id).queryLimited(toLast: 10)
+        let query = Database.database().reference().child("need_tutor").child(user_id).child("status").queryLimited(toLast: 10)
         
-        _ = query.observe(.childAdded, with: { [weak self] snapshot in
+        _ = query.observe(.childChanged, with: { [weak self] snapshot in
             
             if  let data        = snapshot.value as? [String: String],
-                let id          = data["user_id"],
-                let name        = data["name"],
-                let subject        = data["subject"],
-                let status       = data["status"]
+                let status          = data["status"]
             {
                 print(data)
                 
-                if subject == "subject" && status == "closed" && wait == true {
+                if status == "closed" && wait == true {
                     wait = false
                     let ViewControllernew1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "whiteboard") as UIViewController
                     
