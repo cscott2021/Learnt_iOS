@@ -10,7 +10,7 @@ import UIKit
 
 import FirebaseUI
 import Firebase
-let wait: Bool!
+var wait: Bool!
 class waiting: UIViewController {
 
  
