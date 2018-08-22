@@ -123,7 +123,7 @@
         <!--Whiteboard-->
         <scene sceneID="RSe-Ia-0h3">
             <objects>
-                <viewController storyboardIdentifier="whiteboard" id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="whiteboard" title="Whiteboard" id="JxN-yh-O0d" customClass="whiteboard" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDn-X4-6sQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,10 +421,10 @@
             </objects>
             <point key="canvasLocation" x="-717" y="120"/>
         </scene>
-        <!--Tutor Screen-->
+        <!--Tutor-->
         <scene sceneID="K7K-Xy-76y">
             <objects>
-                <viewController storyboardIdentifier="tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutor" title="Tutor" id="Z1V-aW-eDN" customClass="tutorScreen" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gyU-i3-ToQ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,9 +462,13 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moK-YR-TJp">
-                                        <rect key="frame" x="42" y="209" width="240" height="118"/>
+                                        <rect key="frame" x="42" y="209" width="240" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                         <string key="text">Hello Caleb,
+=======
+                                        <string key="text">Hello,           Caleb Scott
+>>>>>>> 04fd661aa56f40f14882d3f63bc6b231a5dab75d
 </string>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -535,6 +539,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="9Dl-Vk-HdG"/>
                     </view>
+                    <connections>
+                        <outlet property="img" destination="qfp-OT-pCT" id="wrT-Nh-jJ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y7t-oE-fFq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -551,25 +558,23 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnp-lm-QK8">
                                 <rect key="frame" x="237" y="33" width="550" height="702"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo3-Gk-cEs">
-                                        <rect key="frame" x="163.5" y="331" width="223" height="40"/>
-                                        <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria McCready" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vo3-Gk-cEs">
+                                        <rect key="frame" x="0.0" y="331" width="550" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="huI-le-Vdc"/>
-                                            <constraint firstAttribute="width" constant="223" id="yS2-mj-kBV"/>
+                                            <constraint firstAttribute="width" constant="550" id="yS2-mj-kBV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.062745098039215685" green="0.22352941176470587" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-RR-B0N">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-RR-B0N">
                                         <rect key="frame" x="163.5" y="513" width="223" height="40"/>
-                                        <color key="backgroundColor" red="0.062273114919999997" green="0.2223469615" blue="0.78382086750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="nzW-6r-hwV"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="36"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.12549019610000001" green="0.3921568627" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="needs help with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKk-nT-XKz">
@@ -609,10 +614,10 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.94373380829999998" green="0.94373380829999998" blue="0.94373380829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Vo3-Gk-cEs" firstAttribute="leading" secondItem="zc3-RR-B0N" secondAttribute="leading" id="8r3-wz-aQK"/>
+                                    <constraint firstItem="Vo3-Gk-cEs" firstAttribute="leading" secondItem="zc3-RR-B0N" secondAttribute="leading" constant="-163.5" id="8r3-wz-aQK"/>
                                     <constraint firstItem="OKk-nT-XKz" firstAttribute="leading" secondItem="Xnp-lm-QK8" secondAttribute="leading" constant="200" id="9GG-v3-cNu"/>
                                     <constraint firstItem="zc3-RR-B0N" firstAttribute="top" secondItem="OKk-nT-XKz" secondAttribute="bottom" constant="52" id="Ady-c2-qbP"/>
-                                    <constraint firstItem="Vo3-Gk-cEs" firstAttribute="trailing" secondItem="zc3-RR-B0N" secondAttribute="trailing" id="An0-61-RJQ"/>
+                                    <constraint firstItem="Vo3-Gk-cEs" firstAttribute="trailing" secondItem="zc3-RR-B0N" secondAttribute="trailing" constant="163.5" id="An0-61-RJQ"/>
                                     <constraint firstItem="YRM-bW-Jm0" firstAttribute="centerX" secondItem="Vo3-Gk-cEs" secondAttribute="centerX" id="Hy9-Ea-QyF"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="top" secondItem="QGz-NA-nWY" secondAttribute="top" id="JVL-ZN-CVS"/>
                                     <constraint firstItem="lw0-rv-hMx" firstAttribute="baseline" secondItem="QGz-NA-nWY" secondAttribute="firstBaseline" id="Kw1-kr-QQ7"/>
@@ -945,10 +950,10 @@
             </objects>
             <point key="canvasLocation" x="1624" y="-234"/>
         </scene>
-        <!--Main Student-->
+        <!--Student-->
         <scene sceneID="cYj-Gg-n24">
             <objects>
-                <viewController storyboardIdentifier="student" id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="student" title="Student" id="U58-pR-2ko" customClass="mainStudent" customModule="Learnt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HUK-4q-QPk">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
