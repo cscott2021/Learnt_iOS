@@ -22,9 +22,9 @@ class waiting: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         _ = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: false)
 
-       
-        
+
     }
 }
