@@ -13,7 +13,10 @@ import Firebase
 let wait: Bool!
 class waiting: UIViewController {
 
-    func openTutor() {
+ 
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         wait = true
         let query = Database.database().reference().child("need_tutor").child(user_id).queryLimited(toLast: 10)
         
@@ -37,14 +40,6 @@ class waiting: UIViewController {
                 
             }
         })
-    }
-    
-    
-    override func viewDidLoad() {
-        img.layer.cornerRadius = img.frame.size.width/2
-        img.clipsToBounds = true
-        super.viewDidLoad()
-        openTutor()
         
     }
 }
