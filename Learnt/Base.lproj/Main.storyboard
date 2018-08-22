@@ -464,11 +464,8 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="moK-YR-TJp">
                                         <rect key="frame" x="42" y="209" width="240" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
-                                        <string key="text">Hello Caleb,
-=======
+
                                         <string key="text">Hello,           Caleb Scott
->>>>>>> 04fd661aa56f40f14882d3f63bc6b231a5dab75d
 </string>
                                         <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="33"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
